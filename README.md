@@ -217,11 +217,83 @@ $ yarn dev
 
 githubでpublicのレポジトリを作成し、レポジトリURLをコピーします。
 
+```bash
 $ git add -A
 $ git commit -m "init nuxt"
 $ git remote add origin レポジトリURL
 $ git push -u origin master
+```
 
-https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/#creating-a-token
+このあたりから本家の引用です。
+
+あなたの代わりにタスクを実行してもらうために []GitHub personal access token を生成する](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/#creating-a-token) 必要があります。
+
+トークンを生成したら、すぐ後で使うので安全な場所にメモしておいてください。
+
+同じ画面を下にスクロールして Environment Variables (環境変数) セクションを表示させたら、GITHUB_ACCESS_TOKEN という名前の新しい変数を作成し、値のフィールドにさきほど生成したおいた GitHub personal access token を入力し、'Add' (追加) ボタンをクリックします。
+
+
+次に、デプロイ設定を記述するyamlファイルを編集します。
+
+.travis.yml
+
+```yaml
+language: node_js
+node_js:
+  - "8"
+
+cache:
+  directories:
+    - "node_modules"
+
+branches:
+  only:
+  - master
+
+install:
+  - npm install
+  - npm run generate
+
+script:
+  - echo "Skipping tests"
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_ACCESS_TOKEN  # セキュアとマークされたアクセストークンを travis-ci.org のダッシュボードに設定してください。https://docs.travis-ci.com/user/deployment/pages/#Setting-the-GitHub-token
+  target-branch: gh-pages
+  local-dir: dist
+  on:
+    branch: master
+```
+
+masterにpushしたときしかデプロイは実行されないので、注意（安心？）しましょう。
+
+以下のように、`branch: master`で指定されています
+
+```
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_ACCESS_TOKEN  # セキュアとマークされたアクセストークンを travis-ci.org のダッシュボードに設定してください。https://docs.travis-ci.com/user/deployment/pages/#Setting-the-GitHub-token
+  target-branch: gh-pages
+  local-dir: dist
+  on:
+    branch: master
+```
+
+いよいよ、デプロイです！
+
+```bash
+$ git add .travis.yml
+$ git commit -m "Adding travis deploy configuration"
+$ git push origin
+```
+
+travisciが動きます！travisciのjob logをみると、２分くらいでデプロイが完了しました。
+
+github pagesにアクセスしてみましょう！
+
+https://<あなたのユーザ名>.github.io/<あなたのレポジトリ名>/ に、ローカルと同じ表示が出ていればOKです！
 
 
