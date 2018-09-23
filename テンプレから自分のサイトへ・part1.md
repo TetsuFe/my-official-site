@@ -160,3 +160,56 @@ export default {
 </style>
 ```
 
+
+## 2.5 ニュース（最新情報）つける
+
+ぬきたしサイトを参考に作成していく
+
+```vue
+<section id="news">
+  <div class="title-wrap">
+    <img src="img/news/sideA/title.png" sizes="(min-width:356px) 50vw, 100vw" srcset="img/news/sideA/title.png 200w, img/news/sideA/title@2x.png 400w" width="178">
+  </div>
+  <div id="news-wrap">
+    <div id="news-list">
+      <div class="item">
+        <div class="item-wrap">
+          <a href="./special/rally/vol2/">
+            <div class="thumb">
+              <img src="img/news/sideA/thumb/thumb35.jpg" sizes="(min-width:160px) 50vw, 100vw" width="80" srcset="img/news/sideA/thumb/thumb35.jpg 200w, img/news/sideA/thumb/thumb35@2x.jpg 400w">
+            </div>
+            <div class="date">
+              <p>2018.08.13</p>
+            </div>
+            <div class="text">
+              <p>抜きゲーみたいな島に住んでる貧乳はどうすりゃいいですか？ファンミーティングイベントvol.2「ネタバレ解禁！NLNS大反省会」の情報を公開しました！</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-wrap">
+          <a href="./special/patch/">
+						<div class="thumb">
+							<img src="img/news/sideA/thumb/thumb34.jpg" sizes="(min-width:160px) 50vw, 100vw" width="80" srcset="img/news/sideA/thumb/thumb34.jpg 200w, img/news/sideA/thumb/thumb34@2x.jpg 400w">
+						</div>
+						<div class="date">
+							<p>2018.08.07</p>
+						</div>
+					<div class="text">
+						<p>ぬきたしパッチリリース（ver1.02）のお知らせ</p>
+						</div>
+					</a>
+					</div>
+				</div>
+      <div class="twitter">
+        <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered" style="position: static; visibility: visible; display: inline-block; width: 100%; height: 364px; padding: 0px; border: none; max-width: 100%; min-width: 180px; margin-top: 0px; margin-bottom: 0px; min-height: 200px;" data-widget-id="profile:tetsufe_twi" title="Twitterタイムライン">
+        </iframe>
+        <script src="https://platform.twitter.com/widgets.js" async="" charset="utf-8">
+        </script>
+      </div>
+    </div>
+  </div>
+</section>
+```
+
