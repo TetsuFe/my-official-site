@@ -1,65 +1,47 @@
 <template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        tetsufe-github-pages
-      </h1>
-      <h2 class="subtitle">
-         A Nuxt.js Github.io site
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
-    </div>
-  </section>
+  <div id="body">
+    <header>
+      <nav id="menu">
+        <div class="menu">
+          <nuxt-link to="#top">トップ</nuxt-link>
+        </div>
+        <div class="menu">
+          <nuxt-link to="#news">ニュース</nuxt-link>
+        </div>
+      </nav>
+    </header>
+    <article>
+      <section id="top">
+        <div class="img-wrap">
+          <img src="~/assets/images/carousel/hufurima.jpg">
+        </div>
+        <!--
+        <div>
+          <img src="/assets/images/carousel/eitango.jpg">
+        </divk>
+        -->
+      </section>
+    </article>
+  </div>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+//import AppLogo from '~/components/AppLogo.vue'
 
 export default {
   components: {
-    AppLogo
+    //AppLogo
   }
 }
 </script>
 
 <style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
+  .img-wrap{
+    text-align: center;
+  }
+  img{
+    max-width: 80%;
+    object-fit: contain;
+  }
 </style>
 

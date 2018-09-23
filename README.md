@@ -5,6 +5,8 @@
 ## Nuxt.jsでgithub pagesを書き換えた
 jsの勉強がてら、Nuxt.jsでgithub pagesを書き換えました。
 
+裏番組（１８禁注意：[ぬきたしで学ぶnuxtレイアウト.md](ぬきたしで学ぶnuxtレイアウト.md)）
+
 ## 開発環境
 macOS Mojave 10.14 Beta（18A384a）
 
