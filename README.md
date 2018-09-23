@@ -9,7 +9,7 @@ jsの勉強がてら、Nuxt.jsでgithub pagesを書き換えました。
 macOS Mojave 10.14 Beta（18A384a）
 
 ## npm, node.jsのインストール
-[npmとnodejsのインストール.md](npmとnodejsのインストール.md)
+[nvmを使ったnpmとnodejsのインストール](nvmを使ったnpmとnodejsのインストール.md)
 
 ## プロジェクトの作成
 $ npm install -g vue-cli
@@ -297,3 +297,7 @@ github pagesにアクセスしてみましょう！
 https://<あなたのユーザ名>.github.io/<あなたのレポジトリ名>/ に、ローカルと同じ表示が出ていればOKです！
 
 
+## 次は？
+このまま自分のポートフォリオ掲載サイトとして、gitbub pagesを作っていく予定です。
+
+[テンプレから自分のサイトへ・part1.md](テンプレから自分のサイトへ・part1.md)
