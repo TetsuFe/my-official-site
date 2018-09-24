@@ -93,12 +93,12 @@
   }
 
   #wrap.sideA #keyword-wrap .contents-title h3 {
-    color: #00d9c5!important;
-    border-bottom: 4px solid #00d9c5;
+    color: #50aa32!important;
+    border-bottom: 4px solid #50aa32;
   }
 
   #wrap.sideA #keyword-wrap .contents-title p {
-    color: #00d9c5!important;
+    color: #50aa32!important;
   }
 
   #wrap.sideA #keyword-wrap .keyword {
@@ -114,7 +114,7 @@
     height: 70px;
     padding: 15px 30px;
     border-radius: 10px;
-    border: 2px solid #00d9c5;
+    border: 2px solid #50aa32;
     overflow: hidden;
   }
 
@@ -128,7 +128,7 @@
   }
 
   #wrap.sideA #keyword-wrap .name p {
-    color: #00d9c5;
+    color: #50aa32;
     font-size: 18px;
     letter-spacing: 2px;
     white-space: pre-wrap;
@@ -149,7 +149,7 @@
     position: absolute;
     top: calc(50% - 18px);
     left: -30px;
-    background: #00d9c5;
+    background: #50aa32;
     width: 4px;
     height: 36px;
     border-radius: 2.5px;
