@@ -1,8 +1,6 @@
 <template>
   <div id="wrap" class="sideA">
-    <header>
-      <Header/>
-    </header>
+    <Header/>
     <article>
       <Top/>
       <News/>
