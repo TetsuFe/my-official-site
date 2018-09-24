@@ -1,8 +1,8 @@
 <template>
   <section id="news">
     <div class="title-wrap">
-      <h2>ニュース</h2>
-      <h3>news</h3>
+      <p>ニュース</p>
+      <h3>News</h3>
     </div>
     <div id="news-wrap">
       <div id="news-list">
@@ -350,5 +350,97 @@
       font-size: 20px;
       line-height: 24px;
     }
+  }
+
+
+  /* タイトル */
+  #wrap.sideB .title-wrap h3 {
+    font-size: 24px;
+  }
+
+  #wrap.sideB .title-wrap p {
+    font-size: 10px;
+  }
+
+  #wrap.sideB .title-wrap {
+    margin-bottom: 40px;
+  }
+
+  #wrap.sideA .title-wrap h3 {
+    width: 224px;
+    color: #0082f2!important;
+    font-family: Arvo;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.8;
+    letter-spacing: 7px;
+    text-align: center;
+    padding-left: 7px;
+    margin: 0 auto 80px;
+    border-bottom: 4px solid #0082f2;
+  }
+
+  #wrap.sideA .title-wrap p {
+    color: #0082f2!important;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 6px;
+    text-align: center;
+    padding-left: 6px;
+  }
+
+  #wrap.sideA .title-wrap h3 {
+    color: #50aa32!important;
+    border-bottom: 4px solid #50aa32;
+  }
+
+  #wrap.sideA .title-wrap p {
+    color: #50aa32!important;
+  }
+
+  #wrap.sideA .title-wrap h3 {
+    width: 180px;
+    font-size: 21px;
+    letter-spacing: 6px;
+    padding-left: 6px;
+    margin: 0 auto 56px;
+  }
+
+  #wrap.sideA .title-wrap p {
+    font-size: 10px;
+    padding-left: 6px;
+  }
+
+  #wrap.sideB .title-wrap {
+    position: relative;
+    width: 320px;
+  }
+
+  #wrap.sideB .title-wrap h3 {
+    color: #f20000;
+    font-family: Roboto Condensed;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: 5px;
+  }
+
+  #wrap.sideB .title-wrap p{
+    font-size: 12px;
+    letter-spacing: 4px;
+    padding-left: 1px;
+  }
+
+  #wrap.sideB .title-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    margin: 180px 0 150px;
+  }
+
+  #wrap.sideA .title-wrap {
+    margin-top: 14px;
   }
 </style>
