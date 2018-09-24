@@ -38,6 +38,13 @@
     margin: 0 auto;
   }
 
+  #story-wrap .story {
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 800;
+    color: #767b85;
+  }
 
   #wrap.sideB .title-wrap h3 {
     font-size: 24px;
