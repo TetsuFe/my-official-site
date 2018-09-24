@@ -561,4 +561,264 @@ export default {
 ```
 
 
+## 3. コンポーネントに分けてみる
+結構index.vueのコードが長くなってきたので、ここでコンポーネントに分けてみましょう。
 
+幸い、ヘッダ、トップ（画像）、ニュースと３つにわかれているので、この３つをコンポーネントにしてみます
+
+
+## 3.1 ヘッダのコンポーネント化
+
+~/components/Header.vue
+
+```vue
+<template>
+  <nav id="menu">
+    <div class="menu">
+      <nuxt-link to="#top">トップ</nuxt-link>
+    </div>
+    <div class="menu">
+      <nuxt-link to="#news">ニュース</nuxt-link>
+    </div>
+  </nav>
+</template>
+
+<script>
+    export default {
+        name: "Header"
+    }
+</script>
+
+<style scoped>
+
+</style>
+```
+
+pages/index.vue
+
+```vue
+<template>
+  <div id="wrap" class="sideA">
+    <header>
+      <Header/>
+    </header>
+	</div>
+</template>
+
+<script>
+
+import Header from '~/components/Header.vue'
+
+export default {
+  components: {
+    Header,
+  }
+}
+</script>
+
+```
+
+cssは特につけていなかったので、これでOKです
+
+
+## 3.2 トップセクションのコンポーネント化
+
+~/components/Top.vue
+
+```vue
+<template>
+  <section id="top">
+    <div class="img-wrap">
+      <img src="~/assets/images/carousel/hufurima.jpg">
+    </div>
+    <!--
+      <div>
+          <img src="/assets/images/carousel/eitango.jpg">
+      </divk>
+      -->
+  </section>
+</template>
+
+<script>
+    export default {
+        name: "Top.vue"
+    }
+</script>
+
+<style scoped>
+
+  .img-wrap{
+    text-align: center;
+  }
+  img{
+    max-width: 80%;
+    object-fit: contain;
+  }
+
+</style>
+```
+
+pages/index.vue
+
+```vue
+<template>
+  <!-- 略 -->
+    <article>
+      <Top/>
+      <section id="news">
+      </section>
+    </article>
+  <!-- 略 -->
+</template>
+
+<script>
+
+import Header from '~/components/Header.vue'
+import Top from '~/components/Top.vue'
+
+export default {
+  components: {
+    Header,
+    Top,
+  }
+}
+</script>
+```
+
+
+## 3.3 ニュースセクション
+
+~/components/News.vue
+
+```vue
+<template>
+  <section id="news">
+    <div class="title-wrap">
+      <h2>ニュース</h2>
+      <h3>news</h3>
+    </div>
+    <div id="news-wrap">
+      <div id="news-list">
+        <div class="item">
+          <div class="item-wrap">
+            <a href="#">
+              <div class="thumb">
+                <!--<img src="img/news/sideA/thumb/thumb35.jpg" sizes="(min-width:160px) 50vw, 100vw" width="80" srcset="img/news/sideA/thumb/thumb35.jpg 200w, img/news/sideA/thumb/thumb35@2x.jpg 400w">-->
+                <img src="~/assets/images/icons/new.svg" sizes="(min-width:160px) 50vw, 100vw" width="80">
+              </div>
+              <div class="date">
+                <p>2018.09.24</p>
+              </div>
+              <div class="text">
+                <p>トップページのトップ画像とニュースを作成しました</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-wrap">
+            <a href="http://swiftfe0.hatenablog.com/entry/2018/09/23/115644">
+              <div class="thumb">
+                <img src="~/assets/images/icons/blog.svg" sizes="(min-width:160px) 50vw, 100vw" width="80">
+              </div>
+              <div class="date">
+                <p>2018.09.23</p>
+              </div>
+              <div class="text">
+                <p>サイトリニューアルに関するブログを書きました</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-wrap">
+            <a href="#">
+              <div class="thumb">
+                <img src="~/assets/images/icons/new.svg" sizes="(min-width:160px) 50vw, 100vw" width="80">
+              </div>
+              <div class="date">
+                <p>2018.09.23</p>
+              </div>
+              <div class="text">
+                <p>サイトをリニューアルしました！</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="twitter">
+        <div id="twitter-timeline-body">
+          <a class="twitter-timeline" data-height="364" data-theme="light" href="https://twitter.com/tetsufe_twi?ref_src=twsrc%5Etfw">Tweets by tetsufe_twi</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>            </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+    export default {
+        name: "News"
+    }
+</script>
+
+<style scoped>
+  .title-wrap{
+    text-align: center;
+  }
+
+  #news-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1120px;
+    margin: 0 auto;
+  }
+
+  #news-list {
+    overflow-y: scroll;
+  }
+
+  #news-list a {
+    -webkit-transition: none;
+    transition: none;
+  }
+  
+  /* 略 */
+
+</style>
+```
+
+pages/index.vue
+
+```vue
+<template>
+  <div id="wrap" class="sideA">
+    <header>
+      <Header/>
+    </header>
+    <article>
+      <Top/>
+      <News/>
+    </article>
+  </div>
+</template>
+
+<script>
+
+import Header from '~/components/Header.vue'
+import Top from '~/components/Top.vue'
+import News from '~/components/News.vue'
+
+export default {
+  components: {
+    Header,
+    Top,
+    News,
+  }
+}
+</script>
+
+<style>
+</style>
+```
+
+このindex.vueは全文です！かなり見通しがよくなりましたね！
