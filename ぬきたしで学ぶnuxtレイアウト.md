@@ -202,38 +202,201 @@
 
 ## キャラクター
 
-どうやら、キャラクターに関してはどんどん階層が下になるようになっているようだ。なんでそんなことをする必要があるのかはよくわからない
-    
+わかってはいたが、キャラクターに関しては、割と特殊な構成になっていた
+
+- 左にキャラクター選択バー（縦長）
+  - ３つに役割ごとにセクション分け
+- 右側にキャラクター(display: noneかどうかで変更)
+  - セリフ（縦長）
+  - 名前
+  - ルビ
+
 ``` 
-    <section id="character">
-      <div class="title-wrap">
-        <img src="img/character/sideA/title.png" sizes="(min-width:544px) 50vw, 100vw" srcset="img/character/sideA/title.png 200w, img/character/sideA/title@2x.png 400w" width="272">
+<template>
+
+  <section id="character">
+    <div class="title-wrap">
+      <img src="img/character/sideA/title.png" sizes="(min-width:544px) 50vw, 100vw" srcset="img/character/sideA/title.png 200w, img/character/sideA/title@2x.png 400w" width="272">
+    </div>
+    <div id="character-wrap">
+      <div id="character-nav">
+        <div class="title">
+          <img src="img/character/sideA/nav_title01.png" sizes="(min-width:440px) 50vw, 100vw" srcset="img/character/sideA/nav_title01.png 200w, img/character/sideA/nav_title01@2x.png 400w" width="220">
         </div>
-        <div id="character-wrap">
-          <div id="character-nav">
-            <div class="title">
-              <img src="img/character/sideA/nav_title01.png" sizes="(min-width:440px) 50vw, 100vw" srcset="img/character/sideA/nav_title01.png 200w, img/character/sideA/nav_title01@2x.png 400w" width="220">
+        <div class="nav-wrap">
+          <div class="nav hinami">
+            <svg>
+              <circle cx="28" cy="28" r="25" class="" style="stroke-dashoffset: 157px;"></circle>
+            </svg>
+            <img src="img/character/sideA/character01/thumb.png" sizes="(min-width:100px) 50vw, 100vw" srcset="img/character/sideA/character01/thumb.png 200w, img/character/sideA/character01/thumb@2x.png 400w" width="50">
+            <img src="img/character/sideA/character01/nav.png" sizes="(min-width:204px) 50vw, 100vw" srcset="img/character/sideA/character01/nav.png 200w, img/character/sideA/character01/nav@2x.png 400w" width="102">
+          </div>
+          <div class="nav nanase">
+            <svg>
+              <circle cx="28" cy="28" r="25" class="" style="stroke-dashoffset: 157px;"></circle>
+            </svg>
+            <img src="img/character/sideA/character02/thumb.png" sizes="(min-width:100px) 50vw, 100vw" srcset="img/character/sideA/character02/thumb.png 200w, img/character/sideA/character02/thumb@2x.png 400w" width="50">
+            <img src="img/character/sideA/character02/nav.png" sizes="(min-width:210px) 50vw, 100vw" srcset="img/character/sideA/character02/nav.png 200w, img/character/sideA/character02/nav@2x.png 400w" width="105">
+          </div>
+          <div class="nav misaki">
+            <svg>
+              <circle cx="28" cy="28" r="25" class="" style="stroke-dashoffset: 157px;"></circle>
+            </svg>
+            <img src="img/character/sideA/character03/thumb.png" sizes="(min-width:100px) 50vw, 100vw" srcset="img/character/sideA/character03/thumb.png 200w, img/character/sideA/character03/thumb@2x.png 400w" width="50">
+            <img src="img/character/sideA/character03/nav.png" sizes="(min-width:124px) 50vw, 100vw" srcset="img/character/sideA/character03/nav.png 200w, img/character/sideA/character03/nav@2x.png 400w" width="62">
+          </div>
+          <div class="nav asane">
+            <svg>
+              <circle cx="28" cy="28" r="25" class="" style="stroke-dashoffset: 157px;"></circle>
+            </svg>
+            <img src="img/character/sideA/character04/thumb.png" sizes="(min-width:100px) 50vw, 100vw" srcset="img/character/sideA/character04/thumb.png 200w, img/character/sideA/character04/thumb@2x.png 400w" width="50">
+            <img src="img/character/sideA/character04/nav.png" sizes="(min-width:168px) 50vw, 100vw" srcset="img/character/sideA/character04/nav.png 200w, img/character/sideA/character04/nav@2x.png 400w" width="84">
+          </div>
+        </div>
+        <div class="title">
+          <img src="img/character/sideA/nav_title02.png" sizes="(min-width:440px) 50vw, 100vw" srcset="img/character/sideA/nav_title02.png 200w, img/character/sideA/nav_title02@2x.png 400w" width="220">
+        </div>
+        <div class="nav-wrap">
+          <div class="nav tohka">
+            <svg>
+              <circle cx="28" cy="28" r="25" class="" style="stroke-dashoffset: 157px;"></circle>
+            </svg>
+            <img src="img/character/sideA/character05/thumb.png" sizes="(min-width:100px) 50vw, 100vw" srcset="img/character/sideA/character05/thumb.png 200w, img/character/sideA/character05/thumb@2x.png 400w" width="50">
+            <img src="img/character/sideA/character05/nav.png" sizes="(min-width:208px) 50vw, 100vw" srcset="img/character/sideA/character05/nav.png 200w, img/character/sideA/character05/nav@2x.png 400w" width="104">
+          </div>
+          <div class="nav rei">
+            <svg>
+              <circle cx="28" cy="28" r="25" class="" style="stroke-dashoffset: 157px;"></circle>
+            </svg>
+            <img src="img/character/sideA/character06/thumb.png" sizes="(min-width:100px) 50vw, 100vw" srcset="img/character/sideA/character06/thumb.png 200w, img/character/sideA/character06/thumb@2x.png 400w" width="50">
+            <img src="img/character/sideA/character06/nav.png" sizes="(min-width:124px) 50vw, 100vw" srcset="img/character/sideA/character06/nav.png 200w, img/character/sideA/character06/nav@2x.png 400w" width="62">
+          </div>
+          <div class="nav ikuko">
+            <svg>
+              <circle cx="28" cy="28" r="25" class="" style="stroke-dashoffset: 157px;"></circle>
+            </svg>
+            <img src="img/character/sideA/character07/thumb.png" sizes="(min-width:100px) 50vw, 100vw" srcset="img/character/sideA/character07/thumb.png 200w, img/character/sideA/character07/thumb@2x.png 400w" width="50">
+            <img src="img/character/sideA/character07/nav.png" sizes="(min-width:208px) 50vw, 100vw" srcset="img/character/sideA/character07/nav.png 200w, img/character/sideA/character07/nav@2x.png 400w" width="104">
+          </div>
+        </div>
+        <div class="title">
+          <img src="img/character/sideA/nav_title03.png" sizes="(min-width:440px) 50vw, 100vw" srcset="img/character/sideA/nav_title03.png 200w, img/character/sideA/nav_title03@2x.png 400w" width="220">
+        </div>
+        <div class="nav-wrap">
+          <div class="nav kohki">
+            <svg>
+              <circle cx="28" cy="28" r="25" class="" style="stroke-dashoffset: 157px;"></circle>
+            </svg>
+            <img src="img/character/sideA/character09/thumb.png" sizes="(min-width:100px) 50vw, 100vw" srcset="img/character/sideA/character09/thumb.png 200w, img/character/sideA/character09/thumb@2x.png 400w" width="50">
+            <img src="img/character/sideA/character09/nav.png" sizes="(min-width:168px) 50vw, 100vw" srcset="img/character/sideA/character09/nav.png 200w, img/character/sideA/character09/nav@2x.png 400w" width="84">
+          </div>
+          <div class="nav ran">
+            <svg>
+              <circle cx="28" cy="28" r="25" class="" style="stroke-dashoffset: 157px;"></circle>
+            </svg>
+            <img src="img/character/sideA/character11/thumb.png" sizes="(min-width:100px) 50vw, 100vw" srcset="img/character/sideA/character11/thumb.png 200w, img/character/sideA/character11/thumb@2x.png 400w" width="50">
+            <img src="img/character/sideA/character11/nav.png" sizes="(min-width:124px) 50vw, 100vw" srcset="img/character/sideA/character11/nav.png 200w, img/character/sideA/character11/nav@2x.png 400w" width="62">
+          </div>
+          <div class="nav hamedorikun">
+            <svg>
+              <circle cx="28" cy="28" r="25" class="" style="stroke-dashoffset: 157px;"></circle>
+            </svg>
+            <img src="img/character/sideA/character10/thumb.png" sizes="(min-width:100px) 50vw, 100vw" srcset="img/character/sideA/character10/thumb.png 200w, img/character/sideA/character10/thumb@2x.png 400w" width="50">
+            <img src="img/character/sideA/character10/nav.png" sizes="(min-width:240px) 50vw, 100vw" srcset="img/character/sideA/character10/nav.png 200w, img/character/sideA/character10/nav@2x.png 400w" width="120">
+          </div>
+        </div>
+      </div>
+
+      <div class="character">
+        <span mode="out-in">
+          <div class="serif hinami" style="display: none;">
+            <img src="img/character/sideA/character01/serif.png" sizes="(min-width:180px) 50vw, 100vw" srcset="img/character/sideA/character01/serif.png 200w, img/character/sideA/character01/serif@2x.png 400w" width="90">
+          </div>
+          <div class="serif nanase" style="display: none;">
+          </div>
+          <div class="serif misaki" style="display: none;">
+            <img src="img/character/sideA/character03/serif.png" sizes="(min-width:180px) 50vw, 100vw" srcset="img/character/sideA/character03/serif.png 200w, img/character/sideA/character03/serif@2x.png 400w" width="90">
+          </div>
+          <div class="serif asane" style="">
+            <img src="img/character/sideA/character04/serif.png" sizes="(min-width:180px) 50vw, 100vw" srcset="img/character/sideA/character04/serif.png 200w, img/character/sideA/character04/serif@2x.png 400w" width="90">
+          </div>
+          <div class="serif tohka" style="display:none">
+            <img src="img/character/sideA/character05/serif.png" sizes="(min-width:180px) 50vw, 100vw" srcset="img/character/sideA/character05/serif.png 200w, img/character/sideA/character05/serif@2x.png 400w" width="90">
+          </div>
+        </span>
+
+        <span mode="out-in">
+          <div class="character-image hinami" style="display: none;">
+            <img src="img/character/character01.png">
+            <div class="sd">
+              <img src="img/character/SD01.png">
+            </div>
+          </div>
+          <div class="character-image nanase" style="display: none;">
+            <img src="img/character/character02.png">
+            <div class="sd">
+              <img src="img/character/SD02.png">
+            </div>
+          </div>
+          <div class="character-image misaki" style="display: none;">
+            <img src="img/character/character03.png">
+            <div class="sd">
+              <img src="img/character/SD03.png">
+            </div>
+          </div>
+          <div class="character-image asane" style="">
+            <img src="img/character/character04.png">
+          </div>
+          <div class="character-image tohka" style="display:none">
+            <img src="img/character/character05.png">
+            <div class="sd">
+              <img src="img/character/SD05.png">
+            </div>
+          </div>
+        </span>
+
+        <span mode="out-in">
+          <div class="detail hinami" style="display: none;">
+            <div class="name">
+              <img src="img/character/sideA/character01/name.png" sizes="(min-width:364px) 50vw, 100vw" srcset="img/character/sideA/character01/name.png 200w, img/character/sideA/character01/name@2x.png 400w" width="182">
+            </div>
+            <div class="ruby">
+              <img src="img/character/sideA/character01/ruby.png" sizes="(min-width:288px) 50vw, 100vw" srcset="img/character/sideA/character01/ruby.png 200w, img/character/sideA/character01/ruby@2x.png 400w" width="144">
+            </div>
+            <div class="cast">
+              <img src="img/character/sideA/character01/cast.png" sizes="(min-width:276px) 50vw, 100vw" srcset="img/character/sideA/character01/cast.png 200w, img/character/sideA/character01/cast@2x.png 400w" width="138">
+            </div>
+            <div class="profile">
+              <img src="img/character/sideA/character01/profile.png" sizes="(min-width:550px) 50vw, 100vw" srcset="img/character/sideA/character01/profile.png 200w, img/character/sideA/character01/profile@2x.png 400w" width="275">
+            </div>
+            <div class="sample-voice">
+              <div class="title">
+                <img src="img/character/sideA/sample_voice.png" sizes="(min-width:266px) 50vw, 100vw" srcset="img/character/sideA/sample_voice.png 200w, img/character/sideA/sample_voice@2x.png 400w" width="133">
               </div>
-              <div class="nav-wrap">
-                <div class="nav hinami">
-                  <svg>
-                    <circle cx="28" cy="28" r="25"></circle>
-                  </svg>
-                  <img src="img/character/sideA/character01/thumb.png" sizes="(min-width:100px) 50vw, 100vw" srcset="img/character/sideA/character01/thumb.png 200w, img/character/sideA/character01/thumb@2x.png 400w" width="50">
-                    <img src="img/character/sideA/character01/nav.png" sizes="(min-width:204px) 50vw, 100vw" srcset="img/character/sideA/character01/nav.png 200w, img/character/sideA/character01/nav@2x.png 400w" width="102">
-                    </div>
-                    <div class="nav nanase">
-                      <svg>
-                        <circle cx="28" cy="28" r="25"></circle>
-                      </svg>
-                      <img src="img/character/sideA/character02/thumb.png" sizes="(min-width:100px) 50vw, 100vw" srcset="img/character/sideA/character02/thumb.png 200w, img/character/sideA/character02/thumb@2x.png 400w" width="50">
-                        <img src="img/character/sideA/character02/nav.png" sizes="(min-width:210px) 50vw, 100vw" srcset="img/character/sideA/character02/nav.png 200w, img/character/sideA/character02/nav@2x.png 400w" width="105">
-                        </div>
-                        <div class="nav misaki">
-                          <svg>
-                            <circle cx="28" cy="28" r="25"></circle>
-                          </svg>
-```
+              <div class="voice-wrap">
+                <div class="voice">
+                  <div class="button">
+                    <img src="img/character/sideA/voice01.png" sizes="(min-width:90px) 50vw, 100vw" width="45" srcset="img/character/sideA/voice01.png 200w, img/character/sideA/voice01@2x.png 400w">
+                  </div>
+                </div>
+                <div class="voice">
+                  <div class="button">
+                    <img src="img/character/sideA/voice02.png" sizes="(min-width:90px) 50vw, 100vw" width="45" srcset="img/character/sideA/voice02.png 200w, img/character/sideA/voice02@2x.png 400w">
+                  </div>
+                </div>
+                <div class="voice">
+                  <div class="button">
+                    <img src="img/character/sideA/voice03.png" sizes="(min-width:90px) 50vw, 100vw" width="45" srcset="img/character/sideA/voice03.png 200w, img/character/sideA/voice03@2x.png 400w">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+  </section>
+</template>
 
 ```vue
 ```
