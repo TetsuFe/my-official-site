@@ -52,7 +52,7 @@
 
 キャラクター画像の集合体になっていて、マウスオーバーで各画像が微妙に動くようになっている
 
-[top.png]()
+<img src="./top.png" width="600" height="400" alt="top.png">
 
 ## ニュース
 おおよそ、以下のようになっている。
@@ -66,7 +66,7 @@
 
 ニュースとタイムラインは、多分media queryで制御。小さくなると横幅いっぱいの２行に分かれる
 
-[news.png]()
+<img src="./news.png" width="600" height="400" alt="top.png">
 
 
 ```html
