@@ -1574,6 +1574,22 @@ marginをpaddingに変え、大きさもヘッダの高さと同じ80pxにした
 
 ## 7. カルーセル
 
+plugins/vue-carousel.js
+
+```js
+import Vue from 'vue'
+import VueCarousel from 'vue-carousel'
+
+Vue.use(VueCarousel)
+```
+
+nuxt.config.js
+
+```js
+plugins: [{ src: '~plugins/vue-carousel', ssr: false }]
+```
+
+
 ## 8. ブラッシュアップ
 
 セクションタイトルのスタイル変更

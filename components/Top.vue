@@ -1,20 +1,24 @@
 <template>
   <section id="top">
-    <div class="img-wrap">
-      <img src="~/assets/images/carousel/hufurima.jpg">
-    </div>
-    <!--
-      <div>
-          <img src="/assets/images/carousel/eitango.jpg">
-      </divk>
-      -->
+  <carousel per-page="1" mouse-drag="false" >
+    <slide>
+      <div class="img-wrap">
+        <img src="~/assets/images/carousel/hufurima.jpg">
+      </div>
+    </slide>
+    <slide>
+      <div class="img-wrap">
+        <img src="~/assets/images/carousel/eitango.jpg">
+      </div>
+    </slide>
+    </carousel>
   </section>
 </template>
 
 <script>
-    export default {
-        name: "Top"
-    }
+  export default {
+    name: "Top",
+  }
 </script>
 
 <style scoped>
@@ -24,6 +28,7 @@
   }
   img{
     max-width: 80%;
+    max-height: 700px;
     object-fit: contain;
   }
 
