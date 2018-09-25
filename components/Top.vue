@@ -3,12 +3,16 @@
   <carousel per-page="1" mouse-drag="false" >
     <slide>
       <div class="img-wrap">
-        <img src="~/assets/images/carousel/hufurima.jpg">
+        <a href="https;//hufurima.com/">
+          <img src="~/assets/images/carousel/hufurima.jpg">
+        </a>
       </div>
     </slide>
     <slide>
       <div class="img-wrap">
-        <img src="~/assets/images/carousel/eitango.jpg">
+        <a href="https://itunes.apple.com/jp/app/id1218804893?mt=8">
+          <img src="~/assets/images/carousel/eitango.jpg">
+        </a>
       </div>
     </slide>
     </carousel>
