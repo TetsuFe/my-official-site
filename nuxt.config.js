@@ -44,6 +44,13 @@ module.exports = {
         })
       }
     }
-  }
+  },
+
+	plugins:
+    [
+      { src: '~plugins/vue-carousel', ssr: false },
+      '~plugins/vue-scrollto.js',
+    ]
+
 }
 

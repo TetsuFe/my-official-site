@@ -49,5 +49,9 @@ html {
   color: #fff;
   background-color: #35495e;
 }
+
+  section {
+    padding-top: 80px
+  }
 </style>
 
