@@ -1473,6 +1473,8 @@ cssは丸々コピペです
 
 keynoteとtoy viewerを使って画像作成
 
+https://koejima.com/archives/514/
+
 ~/components/Header.vue
 
 ```vue
@@ -1517,6 +1519,58 @@ keynoteとtoy viewerを使って画像作成
 ```
 
 ### 6.2 ヘッダリンクからのスクロールアニメーション
+
+vue-scrolltoを使う。
+
+```bash
+$ yarn add vue-scrollto
+```
+
+https://glitch.com/edit/#!/nuxt-scroll-to?path=pages/index.vue:5:22 を参考に、nuxtでの実装を行った
+
+
+plugins/vue-scrollto.js
+
+```js
+import Vue from 'vue'
+import VueScrollTo from 'vue-scrollto'
+
+Vue.use(VueScrollTo)
+```
+
+nuxt.config.js
+
+```js
+module.exports = {
+	plugins: ['~plugins/vue-scrollto.js']
+}
+```
+
+v-scroll-to="`#id名`"` のように属性を追加すれば良い
+
+~/components/Header.vue
+
+```vue
+      <nav id="menu">
+        <div id="menu01" class="menu" v-scroll-to="'#top'">
+          <!--<img src="http://qruppo.com/img/common/sideA/hart08.png" sizes="(min-width:80px) 50vw, 100vw" width="40" srcset="http://qruppo.com/img/common/sideA/hart08.png 200w, http://qruppo.com/img/common/sideA/hart08@2x.png 400w" class="hart">-->
+          <img src="~/assets/images/common/top.png" sizes="(min-width:80px) 50vw, 100vw" width="41" srcset="~/assets/images/common/top.png 200w, ~/assets/images/common/top.png 400w">
+        </div>
+        <div id="menu02" class="menu" v-scroll-to="'#news'">
+          <img src="~/assets/images/common/news.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/news.png 200w, ~/assets/images/common/news.png 400w">
+        </div>
+
+```
+
+ヘッダの裏に要素がある関係上、スクロールしてもセクションタイトル部分がヘッダに隠れるようになってしまったので、
+
+marginをpaddingに変え、大きさもヘッダの高さと同じ80pxにした
+
+```css
+  section {
+    padding-top: 80px
+  }
+```
 
 ## 7. カルーセル
 
@@ -1643,7 +1697,7 @@ keynoteとtoy viewerを使って画像作成
   }
 ```
 
-## 6. タイトル部分のcss変更
+## 8. タイトル部分のcss変更
 
 箇条書きだけでなく、comtents-titleもいい感じ。これをsectionのタイトルに使えそう。
 

@@ -51,7 +51,7 @@ html {
 }
 
   section {
-    margin-top: 60px
+    padding-top: 80px
   }
 </style>
 
