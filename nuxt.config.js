@@ -48,7 +48,6 @@ module.exports = {
       }
     },
     publicPath: "https://tetsufe.github.io/tetsufe-github-pages/",
-    rootDir: "tetsufe-github-pages",
   },
 
 	plugins:
