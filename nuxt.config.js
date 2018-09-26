@@ -47,12 +47,13 @@ module.exports = {
         })
       }
     },
+    publicPath: "https://tetsufe.github.io/tetsufe-github-pages/"
   },
 
 	plugins:
     [
-      { src: '~/plugins/vue-carousel.js', ssr: false },
-      '~/plugins/vue-scrollto.js',
+      { src: 'https://tetsufe.github.io/tetsufe-github-pages/plugins/vue-carousel.js', ssr: false },
+      'https://tetsufe.github.io/tetsufe-github-pages/plugins/vue-scrollto.js',
     ]
 
 }
