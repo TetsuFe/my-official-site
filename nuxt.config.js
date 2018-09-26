@@ -6,6 +6,7 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
 } : {}
 
 module.exports = {
+
   /*
   ** Headers of the page
   */
@@ -43,7 +44,8 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    },
+    assetsPublicPath: './',
   },
 
 	plugins:
