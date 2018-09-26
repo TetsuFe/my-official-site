@@ -45,7 +45,7 @@ module.exports = {
         })
       }
     },
-    assetsPublicPath: '/tetsufe-github-pages/',
+    publicPath: "https://tetsufe.github.io/tetsufe-github-pages/"
   },
 
 	plugins:
