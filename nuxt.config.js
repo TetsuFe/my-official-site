@@ -50,8 +50,8 @@ module.exports = {
 
 	plugins:
     [
-      { src: '~plugins/vue-carousel', ssr: false },
-      '~plugins/vue-scrollto.js',
+      { src: '~/plugins/vue-carousel', ssr: false },
+      '~/plugins/vue-scrollto.js',
     ]
 
 }
