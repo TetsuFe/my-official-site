@@ -3,7 +3,7 @@
     <div id="header">
       <div id="logo">
         <a href="./">
-          <img src="~/assets/images/common/logo.png" sizes="(min-width:80px) 50vw, 100vw" width="150" srcset="~/assets/images/common/logo.png 200w, ~/assets/images/common/logo.png 400w">
+          <img src="/assets/images/common/logo.png" sizes="(min-width:80px) 50vw, 100vw" width="150" srcset="~/assets/images/common/logo.png 200w, ~/assets/images/common/logo.png 400w">
         </a>
       </div>
       <div id="button-menu">
@@ -12,19 +12,19 @@
       <nav id="menu">
         <div id="menu01" class="menu" v-scroll-to="'#top'">
           <!--<img src="http://qruppo.com/img/common/sideA/hart08.png" sizes="(min-width:80px) 50vw, 100vw" width="40" srcset="http://qruppo.com/img/common/sideA/hart08.png 200w, http://qruppo.com/img/common/sideA/hart08@2x.png 400w" class="hart">-->
-          <img src="~/assets/images/common/top.png" sizes="(min-width:80px) 50vw, 100vw" width="41" srcset="~/assets/images/common/top.png 200w, ~/assets/images/common/top.png 400w">
+          <img src="/assets/images/common/top.png" sizes="(min-width:80px) 50vw, 100vw" width="41" srcset="~/assets/images/common/top.png 200w, ~/assets/images/common/top.png 400w">
         </div>
         <div id="menu02" class="menu" v-scroll-to="'#news'">
-          <img src="~/assets/images/common/news.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/news.png 200w, ~/assets/images/common/news.png 400w">
+          <img src="/assets/images/common/news.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/news.png 200w, ~/assets/images/common/news.png 400w">
         </div>
         <div id="menu03" class="menu" v-scroll-to="'#story'">
-          <img src="~/assets/images/common/story.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/story.png 200w, ~/assets/images/common/story.png 400w">
+          <img src="/assets/images/common/story.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/story.png 200w, ~/assets/images/common/story.png 400w">
         </div>
         <div id="menu04" class="menu" v-scroll-to="'#keyword'">
-          <img src="~/assets/images/common/keyword.png" sizes="(min-width:180px) 50vw, 100vw" width="92" srcset="~/assets/images/common/keyword.png 200w, ~/assets/images/common/keyword.png 400w">
+          <img src="/assets/images/common/keyword.png" sizes="(min-width:180px) 50vw, 100vw" width="92" srcset="~/assets/images/common/keyword.png 200w, ~/assets/images/common/keyword.png 400w">
         </div>
         <div id="menu05" class="menu">
-          <img src="~/assets/images/common/blog.png" sizes="(min-width:180px) 50vw, 100vw" width="49" srcset="~/assets/images/common/blog.png 200w, ~/assets/images/common/blog.png 400w">
+          <img src="/assets/images/common/blog.png" sizes="(min-width:180px) 50vw, 100vw" width="49" srcset="~/assets/images/common/blog.png 200w, ~/assets/images/common/blog.png 400w">
         </div>
       </nav>
       <!--
