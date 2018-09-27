@@ -47,7 +47,6 @@ module.exports = {
         })
       }
     },
-    rootDir: "tetsufe-github-pages",
   },
 
 	plugins:
