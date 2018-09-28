@@ -1,10 +1,4 @@
 // `DEPLOY_ENV` が `GH_PAGES` の場合のみ `router.base = '/<repository-name>/'` を追加する
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-    base: '/tetsufe-github-pages/'
-  }
-} : {}
-
 module.exports = {
 
   /*
@@ -22,8 +16,7 @@ module.exports = {
     ]
   },
 
-  routerBase,
-
+  router: {base: '/tetsufe-github-pages/'},
   /*
   ** Customize the progress bar color
   */
@@ -32,6 +25,8 @@ module.exports = {
   ** Build configuration
   */
   build: {
+
+    vendor: ['vue-carousel', 'vue-scrollto'],
     /*
     ** Run ESLint on save
     */
@@ -45,14 +40,16 @@ module.exports = {
         })
       }
     },
-    publicPath: "https://tetsufe.github.io/tetsufe-github-pages/"
+      publicPath: '/tetsufe-github-pages/_nuxt/',
   },
 
 	plugins:
     [
-      { src: '~plugins/vue-carousel', ssr: false },
-      '~plugins/vue-scrollto.js',
+      { src: '~/plugins/vue-carousel.js', ssr: false },
+      '~/plugins/vue-scrollto.js',
     ]
 
 }
-
+if (process.env.DEPLOY_ENV === 'LOCAL') {
+    module.exports['router']={base: '/'}
+}
