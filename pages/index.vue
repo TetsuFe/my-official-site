@@ -3,6 +3,7 @@
     <Header/>
     <article>
       <Top/>
+      <IntroAnimation/>
       <News/>
       <Story/>
       <!-- TODO: 頑張ってキャラクターのとこ作る
@@ -21,6 +22,7 @@ import News from '~/components/News.vue'
 import Story from '~/components/Story.vue'
 import Character from "../components/Character";
 import Keyword from "../components/Keyword";
+import IntroAnimation from "../components/IntroAnimation";
 
 export default {
   components: {
@@ -30,6 +32,7 @@ export default {
     News,
     Story,
     Character,
+    IntroAnimation,
   }
 }
 </script>
