@@ -24,7 +24,9 @@
           <img src="~/assets/images/common/keyword.png" sizes="(min-width:180px) 50vw, 100vw" width="92" srcset="~/assets/images/common/keyword.png 200w, ~/assets/images/common/keyword.png 400w">
         </div>
         <div id="menu05" class="menu">
-          <img src="~/assets/images/common/blog.png" sizes="(min-width:180px) 50vw, 100vw" width="49" srcset="~/assets/images/common/blog.png 200w, ~/assets/images/common/blog.png 400w">
+          <a href="http://swiftfe0.hatenablog.com">
+            <img src="~/assets/images/common/blog.png" sizes="(min-width:180px) 50vw, 100vw" width="49" srcset="~/assets/images/common/blog.png 200w, ~/assets/images/common/blog.png 400w">
+          </a>
         </div>
       </nav>
       <!--
