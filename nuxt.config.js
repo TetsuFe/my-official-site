@@ -5,7 +5,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'tetsufe-github-pages',
+    title: 'my-official-site',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -16,7 +16,7 @@ module.exports = {
     ]
   },
 
-  router: {base: '/tetsufe-github-pages/'},
+  router: {base: '/my-official-site/'},
   /*
   ** Customize the progress bar color
   */
@@ -40,7 +40,7 @@ module.exports = {
         })
       }
     },
-      publicPath: '/tetsufe-github-pages/_nuxt/',
+      publicPath: '/my-official-site/_nuxt/',
   },
 
 	plugins:
