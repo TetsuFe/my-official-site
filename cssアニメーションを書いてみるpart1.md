@@ -339,7 +339,7 @@
 
 完成したアニメーションは以下のようになりました。
 
-<img src="intro_amine_2.gif" width="600" height="400">
+<img src="intro_anime_2.gif" width="600" height="400">
 
 ここから、以下をやっていきます
 
