@@ -15,10 +15,6 @@
 
 <style scoped>
   #intro-bars {
-    /*
-    -webkit-animation: rotate-bars 3s 1s;
-    animation: rotate-bars 3s 1s;
-    */
     position: relative;
     top: 10px;
     left: 10px;
@@ -70,28 +66,6 @@
   /***
   keyframes
   ***/
-  @-webkit-keyframes rotate-bars {
-    0%   { transform: rotate(0deg);}
-    20% { transform: rotate(95deg);}
-    30% { transform: rotate(90deg);}
-    50% { transform: rotate(185deg);}
-    60% { transform: rotate(180deg);}
-    80% { transform: rotate(275deg);}
-    90% { transform: rotate(270deg);}
-    100% { transform: rotate(270deg);}
-  }
-
-  @keyframes rotate-bars {
-    0%   { transform: rotate(0deg);}
-    20% { transform: rotate(95deg);}
-    30% { transform: rotate(90deg);}
-    50% { transform: rotate(185deg);}
-    60% { transform: rotate(180deg);}
-    80% { transform: rotate(275deg);}
-    90% { transform: rotate(270deg);}
-    100% { transform: rotate(270deg);}
-  }
-
   @-webkit-keyframes rotate-bar-1 {
     0%   { transform: rotate(-90deg);}
     50% { transform: rotate(5deg);}
