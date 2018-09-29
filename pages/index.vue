@@ -1,16 +1,10 @@
 <template>
   <div id="wrap" class="sideA">
     <Header/>
-    <IntroAnimation2/>
-    <!--
-    <div id="intro-animation-wrap">
-      <IntroAnimation id="intro-animation"/>
-    </div>
-    -->
-    <div id="after-animation">
+    <IntroAnimation2 v-if="!this.$store.state.isIntroAnimationEnd"/>
+    <div id="after-animation" v-if="this.$store.state.isIntroAnimationEnd">
       <article>
         <Top/>
-        <IntroAnimation/>
         <News/>
         <Story/>
         <!-- TODO: 頑張ってキャラクターのとこ作る
@@ -30,7 +24,6 @@ import News from '~/components/News.vue'
 import Story from '~/components/Story.vue'
 import Character from "../components/Character";
 import Keyword from "../components/Keyword";
-import IntroAnimation from "../components/IntroAnimation";
 import IntroAnimation2 from "../components/IntroAnimation2";
 
 export default {
@@ -41,7 +34,6 @@ export default {
     News,
     Story,
     Character,
-    IntroAnimation,
     IntroAnimation2,
   }
 }
@@ -62,9 +54,6 @@ export default {
   }
   #intro-animation {
     vertical-align: middle;
-  }
-  #after-animation {
-    display: none;
   }
 </style>
 

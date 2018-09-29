@@ -27,7 +27,22 @@
 
 <script>
     export default {
-        name: "IntroAnimation2"
+        created(context){
+          const parent = this;
+          if (process.browser) {
+            var el = document.querySelector('#intro-animation');
+            if(el !== null) {
+              el.addEventListener('animationend', function (event) {
+                // animation終了時の処理
+                // isIntroAnimationEnd
+                if (event.animationName.indexOf('fade-out') != -1) {
+                  parent.$store.commit('setIntroAnimationEnd')
+                }
+              });
+            }
+          }
+        },
+        name: "IntroAnimation2",
     }
 </script>
 
@@ -343,4 +358,20 @@
     100% { transform: translate3d(0, 1800px, 0);}
     /*100% { transform: translate3d(0, -100%, 0);}*/
   }
+
+  /* 終了時のアニメーション */
+  #intro-animation {
+    animation: fade-out 1s 7s forwards;
+  }
+
+  @keyframes fade-out {
+    0% { opacity: 1;}
+    100% { opacity: 0;}
+  }
+
+  @-webkit-keyframes fade-out {
+    0% { opacity: 1;}
+    100% { opacity: 0;}
+  }
+
 </style>

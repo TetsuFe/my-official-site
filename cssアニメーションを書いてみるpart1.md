@@ -1285,3 +1285,19 @@ https://blog.mmmcorp.co.jp/blog/2017/08/04/css_shapes/ を参考に、三角形�
 出来上がったのがこちらです。ちゃんといい感じで動いています！
 
 <img src="intro_amine_6.gif" width="600" height="400">
+
+
+## アニメーションが終わった後の遷移
+
+さて、アニメーションは終わりました。しかし、メインは自分のポートフォリオページなので、終わったらそこに遷移させなければいけません。
+
+https://monochrome-design.jp/blog/511 を参考に、cssアニメーションが終わった時にdisplay: noneを解除するようにします。
+
+```vue
+var el = document.querySelector('.square');
+
+el.addEventListener('transitionend', function() {
+    // transition終了時の処理
+    alert('transitionend');
+});
+```
