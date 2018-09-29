@@ -28,8 +28,8 @@
 
   #triangles {
     position: relative;
-    height: 1500px;
-    background-color: yellow;
+    height: 1600px;
+    background-color: orange;
     z-index: 2;
   }
 
@@ -66,17 +66,16 @@
 
   #isosceles-triangle-1 {
     position: absolute;
-    top: 180px;
+    top: -1520px;
     background: orange;
     padding-bottom: 35%;
     background-clip: content-box;
     overflow: hidden;
   }
 
-
   #isosceles-triangle-2 {
     position: absolute;
-    top: 280px;
+    top: -1320px;
     background: gray;
     /* line-height: 50px; */
     text-decoration: none;
@@ -87,7 +86,7 @@
 
   #isosceles-triangle-3 {
     position: absolute;
-    top: 380px;
+    top: -1120px;
     background: blue;
     padding-bottom: 35%;
     background-clip: content-box;
@@ -96,38 +95,37 @@
 
   #isosceles-triangle-4 {
     position: absolute;
-    top: 480px;
+    top: -920px;
     background: green;
     padding-bottom: 35%;
     background-clip: content-box;
     overflow: hidden;
   }
 
-
   #square-1 {
     position: absolute;
-    top: 80px;
+    top: -1720px;
     background: orange;
     z-index: 6;
   }
 
   #square-2 {
     position: absolute;
-    top: 180px;
+    top: -1520px;
     background: gray;
     z-index: 5;
   }
 
   #square-3 {
     position: absolute;
-    top: 280px;
+    top: -1320px;
     background: blue;
     z-index: 4;
   }
 
   #square-4 {
     position: absolute;
-    top: 380px;
+    top: -1120px;
     background: green;
     z-index: 3;
   }
@@ -135,7 +133,7 @@
   @media (max-width: 1024px) {
 
     .square {
-      height: 100px;
+      height: 200px;
       width: 100%;
     }
 
@@ -149,7 +147,7 @@
 
     .square {
       position: absolute;
-      height: 100px;
+      height: 200px;
       width: 100%;
     }
 
@@ -176,12 +174,14 @@
   }
 
   @keyframes fall-triangle {
-    100% { transform: translate3d(0, 500px, 0);}
+    10% { transform: translate3d(0, 800px, 0);}
+    100% { transform: translate3d(0, 1800px, 0);}
     /*100% { transform: translate3d(0, -100%, 0);}*/
   }
 
   @-webkit-keyframes fall-triangle {
-    100% { transform: translate3d(0, 500px, 0);}
+    10% { transform: translate3d(0, 800px, 0);}
+    100% { transform: translate3d(0, 1800px, 0);}
     /*100% { transform: translate3d(0, -100%, 0);}*/
   }
 
