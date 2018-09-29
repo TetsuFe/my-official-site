@@ -1,16 +1,24 @@
 <template>
   <div id="wrap" class="sideA">
     <Header/>
-    <article>
-      <Top/>
-      <IntroAnimation/>
-      <News/>
-      <Story/>
-      <!-- TODO: 頑張ってキャラクターのとこ作る
-      <Character/>
-      -->
-      <Keyword/>
-    </article>
+    <IntroAnimation2/>
+    <!--
+    <div id="intro-animation-wrap">
+      <IntroAnimation id="intro-animation"/>
+    </div>
+    -->
+    <div id="after-animation">
+      <article>
+        <Top/>
+        <IntroAnimation/>
+        <News/>
+        <Story/>
+        <!-- TODO: 頑張ってキャラクターのとこ作る
+        <Character/>
+        -->
+        <Keyword/>
+      </article>
+    </div>
   </div>
 </template>
 
@@ -23,6 +31,7 @@ import Story from '~/components/Story.vue'
 import Character from "../components/Character";
 import Keyword from "../components/Keyword";
 import IntroAnimation from "../components/IntroAnimation";
+import IntroAnimation2 from "../components/IntroAnimation2";
 
 export default {
   components: {
@@ -33,10 +42,29 @@ export default {
     Story,
     Character,
     IntroAnimation,
+    IntroAnimation2,
   }
 }
 </script>
 
 <style>
+  #wrap {
+    width: 100%;
+    height: 100%;
+  }
+
+  #intro-animation-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+  }
+  #intro-animation {
+    vertical-align: middle;
+  }
+  #after-animation {
+    display: none;
+  }
 </style>
 
