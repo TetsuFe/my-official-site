@@ -1,19 +1,9 @@
 <template>
   <section id="intro-animation">
     <div id="triangles">
-    <!--
-      <div class="square" id="square-1"></div>
-      <div class="isosceles-triangle" id="isosceles-triangle-1"></div>
-      <div class="square" id="square-2"></div>
-      <div class="isosceles-triangle" id="isosceles-triangle-2"></div>
-      <div class="square" id="square-3"></div>
-      <div class="isosceles-triangle" id="isosceles-triangle-3"></div>
-      <div class="square" id="square-4"></div>
-      <div class="isosceles-triangle" id="isosceles-triangle-4"></div>
-    -->
       <div class="intro-square" id="intro-square-1"></div>
       <div class="intro-triangle" id="intro-triangle-1">
-        <p>怠惰</p>
+        <p>怠惰？</p>
       </div>
       <div class="intro-square" id="intro-square-2"></div>
       <div class="intro-triangle" id="intro-triangle-2">
@@ -23,6 +13,14 @@
       <div class="intro-triangle" id="intro-triangle-3">
         <p>フロントエンド</p>
       </div>
+      <div class="square" id="square-1"></div>
+      <div class="isosceles-triangle" id="isosceles-triangle-1"></div>
+      <div class="square" id="square-2"></div>
+      <div class="isosceles-triangle" id="isosceles-triangle-2"></div>
+      <div class="square" id="square-3"></div>
+      <div class="isosceles-triangle" id="isosceles-triangle-3"></div>
+      <div class="square" id="square-4"></div>
+      <div class="isosceles-triangle" id="isosceles-triangle-4"></div>
     </div>
   </section>
 </template>
@@ -36,7 +34,7 @@
 <style scoped>
 
   .intro-triangle p {
-    text-align: center; width: 100%; height: 100%; position: absolute; top: 30%; left: 0; z-index: 1000; font-size: 50px; color: white; font-weight: 800;
+    text-align: center; width: 100%; height: 100%; position: absolute; top: 30%; left: 0; z-index: 1; font-size: 50px; color: white; font-weight: 800;
    }
 
   /*******************/
@@ -63,7 +61,7 @@
 
   .square {
     margin: 0;
-    animation: fall-triangle 1s forwards;
+    animation: fall-triangle 1s 5s forwards;
   }
 
   .isosceles-triangle:after {
@@ -82,7 +80,7 @@
     text-align: center;
     /* line-height: 50px; */
     text-decoration: none;
-    animation: fall-triangle 1s forwards;
+    animation: fall-triangle 1s 5s forwards;
   }
 
   #isosceles-triangle-1 {
@@ -127,28 +125,28 @@
     position: absolute;
     top: -1720px;
     background: orange;
-    z-index: 6;
+    z-index: 10;
   }
 
   #square-2 {
     position: absolute;
     top: -1520px;
     background: gray;
-    z-index: 5;
+    z-index: 9;
   }
 
   #square-3 {
     position: absolute;
     top: -1320px;
     background: blue;
-    z-index: 4;
+    z-index: 8;
   }
 
   #square-4 {
     position: absolute;
     top: -1120px;
     background: green;
-    z-index: 3;
+    z-index: 7;
   }
 
   @media (max-width: 1024px) {
@@ -179,19 +177,19 @@
   }
 
   #isosceles-triangle-1 {
-    z-index: 6;
+    z-index: 10;
   }
 
   #isosceles-triangle-2 {
-    z-index: 5;
+    z-index: 9;
   }
 
   #isosceles-triangle-3 {
-    z-index: 4;
+    z-index: 8;
   }
 
   #isosceles-triangle-4 {
-    z-index: 3;
+    z-index: 7;
   }
 
   @keyframes fall-triangle {
@@ -246,7 +244,7 @@
     padding-bottom: 35%;
     background-clip: content-box;
     overflow: hidden;
-    animation: fall-triangle 1s 2s forwards;
+    animation: fall-triangle 1s 3s forwards;
   }
 
   #intro-triangle-2 {
@@ -258,7 +256,7 @@
     padding-bottom: 35%;
     background-clip: content-box;
     overflow: hidden;
-    animation: fall-triangle 1s 1s forwards;
+    animation: fall-triangle 1s 1.5s forwards;
   }
 
   #intro-triangle-3 {
@@ -276,7 +274,7 @@
     top: -1820px;
     background: orange;
     z-index: 6;
-    animation: fall-triangle 1s 2s forwards;
+    animation: fall-triangle 1s 3s forwards;
   }
 
   #intro-square-2 {
@@ -284,7 +282,7 @@
     top: -1820px;
     background: gray;
     z-index: 5;
-    animation: fall-triangle 1s 1s forwards;
+    animation: fall-triangle 1s 1.5s forwards;
   }
 
   #intro-square-3 {
@@ -323,15 +321,15 @@
   }
 
   #intro-triangle-1 {
-    z-index: 6;
+    z-index: 4;
   }
 
   #intro-triangle-2 {
-    z-index: 5;
+    z-index: 3;
   }
 
   #intro-triangle-3 {
-    z-index: 4;
+    z-index: 2;
   }
 
   @keyframes fall-triangle {
