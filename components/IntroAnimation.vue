@@ -1,5 +1,6 @@
 <template>
   <section id="intro-bars">
+    <div id="intro-axis"></div>
     <div id="intro-bar-1" class="intro-bar">教育</div>
     <div id="intro-bar-2" class="intro-bar">プログラミング</div>
     <div id="intro-bar-3" class="intro-bar">怠惰</div>
@@ -14,62 +15,46 @@
 
 <style scoped>
   #intro-bars {
-    transform-origin:left top;
-    -webkit-animation: rotate-bar 3s 1s;
-    animation: rotate-bar 3s 1s;
+    /*
+    -webkit-animation: rotate-bars 3s 1s;
+    animation: rotate-bars 3s 1s;
+    */
     position: relative;
-    /*transform-origin:left 50%*/
+    top: 10px;
+    left: 10px;
+    transform-origin: 20px 100px;
   }
 
-  #intro-bar-1 {
+  #intro-axis {
     position: absolute;
-    top: 0;
-    left: 0;
-    transform-origin:left top;
-    transform: rotate(-90deg);
-  }
-  #intro-bar-2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform-origin:left top;
-    transform: rotate(-180deg);
-  }
-  #intro-bar-3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform-origin:left top;
-    transform: rotate(-270deg);
-  }
-
-  .intro-bar {
+    top: 90px;
+    left: 10px;
     border: solid #767b85;
-    border-radius: 20px;
-    height: 40px;
-    width: 25%;
-    text-align: center;
-    display: inline-block;
-    line-height: 32px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
   }
 
   #intro-bar-1 {
     position: absolute;
-    top: 0;
-    left: 0;
-    transform: rotate(-90deg);
+    transform-origin: 20px 20px;
+    transform: rotate(-180deg);
+    -webkit-animation: rotate-bar-1 0.4s 1s forwards;
+    animation: rotate-bar-1 0.4s 1s forwards;
   }
   #intro-bar-2 {
     position: absolute;
-    top: 0;
-    left: 0;
+    transform-origin: 20px 20px;
     transform: rotate(-180deg);
+    -webkit-animation: rotate-bar-2 0.4s 1.5s forwards;
+    animation: rotate-bar-2 0.4s 1.5s forwards;
   }
   #intro-bar-3 {
     position: absolute;
-    top: 0;
-    left: 0;
-    transform: rotate(-270deg);
+    transform-origin: 20px 20px;
+    transform: rotate(-180deg);
+    -webkit-animation: rotate-bar-3 0.4s 2.0s forwards;
+    animation: rotate-bar-3 0.4s 2.0s forwards;
   }
 
   .intro-bar {
@@ -85,7 +70,7 @@
   /***
   keyframes
   ***/
-  @-webkit-keyframes rotate-bar {
+  @-webkit-keyframes rotate-bars {
     0%   { transform: rotate(0deg);}
     20% { transform: rotate(95deg);}
     30% { transform: rotate(90deg);}
@@ -96,7 +81,7 @@
     100% { transform: rotate(270deg);}
   }
 
-  @keyframes rotate-bar {
+  @keyframes rotate-bars {
     0%   { transform: rotate(0deg);}
     20% { transform: rotate(95deg);}
     30% { transform: rotate(90deg);}
@@ -105,5 +90,29 @@
     80% { transform: rotate(275deg);}
     90% { transform: rotate(270deg);}
     100% { transform: rotate(270deg);}
+  }
+
+  @-webkit-keyframes rotate-bar-1 {
+    0%   { transform: rotate(-90deg);}
+    50% { transform: rotate(5deg);}
+    60% { transform: rotate(0deg);}
+    90% { transform: rotate(0deg);}
+    100% { transform: rotate(180deg);}
+  }
+
+  @-webkit-keyframes rotate-bar-2 {
+    0%   { transform: rotate(-90deg);}
+    50% { transform: rotate(5deg);}
+    60% { transform: rotate(0deg);}
+    90% { transform: rotate(0deg);}
+    100% { transform: rotate(180deg);}
+  }
+
+  @-webkit-keyframes rotate-bar-3 {
+    0%   { transform: rotate(-90deg);}
+    50% { transform: rotate(5deg);}
+    60% { transform: rotate(0deg);}
+    90% { transform: rotate(0deg);}
+    100% { transform: rotate(0deg);}
   }
 </style>
