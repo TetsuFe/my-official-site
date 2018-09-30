@@ -48,9 +48,35 @@
 
 <style scoped>
 
-  .intro-triangle p {
-    text-align: center; width: 100%; height: 100%; position: absolute; top: 30%; left: 0; z-index: 1; font-size: 50px; color: white; font-weight: 800;
-   }
+  @media (max-width: 1024px) {
+    .intro-triangle p {
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0%;
+      left: 0;
+      z-index: 1;
+      font-size: 24px;
+      color: white;
+      font-weight: 800;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .intro-triangle p {
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 30%;
+      left: 0;
+      z-index: 1;
+      font-size: 50px;
+      color: white;
+      font-weight: 800;
+    }
+  }
 
   /*******************/
   /* 上 アニメーション */
