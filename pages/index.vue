@@ -1,15 +1,18 @@
 <template>
   <div id="wrap" class="sideA">
     <Header/>
-    <article>
-      <Top/>
-      <News/>
-      <Story/>
-      <!-- TODO: 頑張ってキャラクターのとこ作る
-      <Character/>
-      -->
-      <Keyword/>
-    </article>
+    <IntroAnimation2 v-if="!this.$store.state.isIntroAnimationEnd"/>
+    <div id="after-animation" v-if="this.$store.state.isIntroAnimationEnd">
+      <article>
+        <Top/>
+        <News/>
+        <Story/>
+        <!-- TODO: 頑張ってキャラクターのとこ作る
+        <Character/>
+        -->
+        <Keyword/>
+      </article>
+    </div>
   </div>
 </template>
 
@@ -21,6 +24,7 @@ import News from '~/components/News.vue'
 import Story from '~/components/Story.vue'
 import Character from "../components/Character";
 import Keyword from "../components/Keyword";
+import IntroAnimation2 from "../components/IntroAnimation2";
 
 export default {
   components: {
@@ -30,10 +34,26 @@ export default {
     News,
     Story,
     Character,
+    IntroAnimation2,
   }
 }
 </script>
 
 <style>
+  #wrap {
+    width: 100%;
+    height: 100%;
+  }
+
+  #intro-animation-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+  }
+  #intro-animation {
+    vertical-align: middle;
+  }
 </style>
 
