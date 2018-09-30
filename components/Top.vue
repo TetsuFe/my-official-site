@@ -3,7 +3,7 @@
   <carousel per-page="1" mouse-drag="false" >
     <slide>
       <div class="img-wrap">
-        <a href="https;//hufurima.com/">
+        <a href="https://hufurima.com/">
           <img src="~/assets/images/carousel/hufurima.jpg">
         </a>
       </div>
