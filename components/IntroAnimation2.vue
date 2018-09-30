@@ -57,14 +57,14 @@
 
   #intro-animation {
     height: 1280px;
-    background-color: black;
+    background-color: bisque;
   }
 
   #triangles {
     position: relative;
     height: 1200px;
-    background-color: bisque;
-    z-index: 2;
+    background-color: #d15a35;
+    z-index: 6;
   }
 
   @media (min-width: 1024px) {
@@ -76,7 +76,7 @@
 
   .square {
     margin: 0;
-    animation: fall-triangle 1s 5s forwards;
+    animation: fall-second-triangle 0.3s 5s forwards;
   }
 
   .isosceles-triangle:after {
@@ -95,13 +95,13 @@
     text-align: center;
     /* line-height: 50px; */
     text-decoration: none;
-    animation: fall-triangle 1s 5s forwards;
+    animation: fall-second-triangle 0.3s 5s forwards;
   }
 
   #isosceles-triangle-1 {
     position: absolute;
     top: -1520px;
-    background: orange;
+    background: #d15a35;
     padding-bottom: 35%;
     background-clip: content-box;
     overflow: hidden;
@@ -110,7 +110,7 @@
   #isosceles-triangle-2 {
     position: absolute;
     top: -1320px;
-    background: gray;
+    background: #3250aa;
     /* line-height: 50px; */
     text-decoration: none;
     padding-bottom: 35%;
@@ -121,7 +121,7 @@
   #isosceles-triangle-3 {
     position: absolute;
     top: -1120px;
-    background: blue;
+    background: #50AA32;
     padding-bottom: 35%;
     background-clip: content-box;
     overflow: hidden;
@@ -130,7 +130,7 @@
   #isosceles-triangle-4 {
     position: absolute;
     top: -920px;
-    background: green;
+    background: #aa3250;
     padding-bottom: 35%;
     background-clip: content-box;
     overflow: hidden;
@@ -139,28 +139,28 @@
   #square-1 {
     position: absolute;
     top: -1720px;
-    background: orange;
+    background: #d15a35;
     z-index: 10;
   }
 
   #square-2 {
     position: absolute;
     top: -1520px;
-    background: gray;
+    background: #3250aa;
     z-index: 9;
   }
 
   #square-3 {
     position: absolute;
     top: -1320px;
-    background: blue;
+    background: #50AA32;
     z-index: 8;
   }
 
   #square-4 {
     position: absolute;
     top: -1120px;
-    background: green;
+    background: #aa3250;
     z-index: 7;
   }
 
@@ -207,18 +207,6 @@
     z-index: 7;
   }
 
-  @keyframes fall-triangle {
-    10% { transform: translate3d(0, 800px, 0);}
-    100% { transform: translate3d(0, 1800px, 0);}
-    /*100% { transform: translate3d(0, -100%, 0);}*/
-  }
-
-  @-webkit-keyframes fall-triangle {
-    10% { transform: translate3d(0, 800px, 0);}
-    100% { transform: translate3d(0, 1800px, 0);}
-    /*100% { transform: translate3d(0, -100%, 0);}*/
-  }
-
   /******************/
   /* 下アニメーション */
   /******************/
@@ -255,57 +243,57 @@
   #intro-triangle-1 {
     position: absolute;
     top: -1620px;
-    background: orange;
+    background: #aa3250;
     padding-bottom: 35%;
     background-clip: content-box;
     overflow: hidden;
-    animation: fall-triangle 1s 3s forwards;
+    animation: fall-intro-triangle 1s 3s forwards;
   }
 
   #intro-triangle-2 {
     position: absolute;
     top: -1620px;
-    background: gray;
+    background: #3250aa;
     /* line-height: 50px; */
     text-decoration: none;
     padding-bottom: 35%;
     background-clip: content-box;
     overflow: hidden;
-    animation: fall-triangle 1s 1.5s forwards;
+    animation: fall-intro-triangle 1s 1.5s forwards;
   }
 
   #intro-triangle-3 {
     position: absolute;
     top: -1620px;
-    background: blue;
+    background: #50AA32;
     padding-bottom: 35%;
     background-clip: content-box;
     overflow: hidden;
-    animation: fall-triangle 1s forwards;
+    animation: fall-intro-triangle 1s forwards;
   }
 
   #intro-square-1 {
     position: absolute;
     top: -1820px;
-    background: orange;
-    z-index: 6;
-    animation: fall-triangle 1s 3s forwards;
+    background: #aa3250;
+    z-index: 5;
+    animation: fall-intro-triangle 1s 3s forwards;
   }
 
   #intro-square-2 {
     position: absolute;
     top: -1820px;
-    background: gray;
-    z-index: 5;
-    animation: fall-triangle 1s 1.5s forwards;
+    background: #3250aa;
+    z-index: 4;
+    animation: fall-intro-triangle 1s 1.5s forwards;
   }
 
   #intro-square-3 {
     position: absolute;
     top: -1820px;
-    background: blue;
-    z-index: 4;
-    animation: fall-triangle 1s forwards;
+    background: #50AA32;
+    z-index: 3;
+    animation: fall-intro-triangle 1s forwards;
   }
 
   @media (max-width: 1024px) {
@@ -347,21 +335,30 @@
     z-index: 2;
   }
 
-  @keyframes fall-triangle {
+
+  @keyframes fall-intro-triangle {
     10% { transform: translate3d(0, 800px, 0);}
     100% { transform: translate3d(0, 1800px, 0);}
-    /*100% { transform: translate3d(0, -100%, 0);}*/
   }
 
-  @-webkit-keyframes fall-triangle {
+  @-webkit-keyframes fall-intro-triangle {
     10% { transform: translate3d(0, 800px, 0);}
     100% { transform: translate3d(0, 1800px, 0);}
-    /*100% { transform: translate3d(0, -100%, 0);}*/
+  }
+
+  @keyframes fall-second-triangle {
+    10% { transform: translate3d(0, 800px, 0);}
+    100% { transform: translate3d(0, 1600px, 0);}
+  }
+
+  @-webkit-keyframes fall-second-triangle {
+    10% { transform: translate3d(0, 800px, 0);}
+    100% { transform: translate3d(0, 1600px, 0);}
   }
 
   /* 終了時のアニメーション */
   #intro-animation {
-    animation: fade-out 1s 7s forwards;
+    animation: fade-out 0.3s 5.2s forwards;
   }
 
   @keyframes fade-out {
