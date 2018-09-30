@@ -7,7 +7,7 @@
         </a>
       </div>
       <div id="button-menu">
-        <img src="http://qruppo.com/img/common/sideA/button_menu.png" sizes="(min-width:100px) 50vw, 100vw" width="50" srcset="http://qruppo.com/img/common/sideA/button_menu.png 200w, http://qruppo.com/img/common/sideA/button_menu@2x.png 400w">
+        <img src="~/assets/images/icons/menu.svg" sizes="(min-width:100px) 50vw, 100vw" width="42" srcset="~/assets/images/icons/menu.svg 200w, ~/assets/images/icons/menu.svg 400w">
       </div>
       <nav id="menu">
         <div id="menu01" class="menu" v-scroll-to="'#top'">
