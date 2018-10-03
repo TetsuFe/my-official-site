@@ -15,19 +15,19 @@
           </div>
           <div class="keyword">
             <div class="name">
-              <p>サービス開発</p>
+              <p>Webサービス開発</p>
             </div>
-            <p class="description">有名になりたい。大勢の人が使うサービスを作って褒められたい。</p>
+            <p class="description">Webで有名になりたい。大勢の人が使うサービスを作って褒められたい。北大生限定フリマWebサイト「<a href="https://hufurima.com/">ホクマ</a>」を運営しています。</p>
           </div>
           <div class="keyword">
             <div class="name">
-              <p>教育熱心</p>
+              <p>育成</p>
             </div>
             <p class="description">誰かに何かを教えることが好き。気軽に質問される人になりたい。</p>
           </div>
           <div class="keyword">
             <div class="name">
-              <p>怠け</p>
+              <p>怠惰？</p>
             </div>
             <p class="description">怠け癖がある。何かをするのに時間がかかる。本気になれるものを探している。</p>
           </div>
