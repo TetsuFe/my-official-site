@@ -7,11 +7,11 @@
       </div>
       <div class="intro-square" id="intro-square-2"></div>
       <div class="intro-triangle" id="intro-triangle-2">
-        <p>思想</p>
+        <p>育成</p>
       </div>
       <div class="intro-square" id="intro-square-3"></div>
       <div class="intro-triangle" id="intro-triangle-3">
-        <p>フロントエンド</p>
+        <p>Webサービス</p>
       </div>
       <div class="square" id="square-1"></div>
       <div class="isosceles-triangle" id="isosceles-triangle-1"></div>
