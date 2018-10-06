@@ -52,7 +52,11 @@
     methods: {
       onClickMenuButton() {
         if (process.browser) {
-          document.querySelector('header').classList.toggle('is-open');
+          if(this.isMenuOpen){
+            document.querySelector('header').classList.remove('is-open');
+          }else{
+            document.querySelector('header').classList.add('is-open');
+          }
           this.isMenuOpen = !this.isMenuOpen;
         }
       },
@@ -183,13 +187,13 @@ header.sideB {
     overflow: hidden;
   }
 
-  header.is-open {
-    height: 100%;
+  header {
     -webkit-transition: height 0.25s ease-in;
     transition: height 0.25s ease-in;
   }
 
-  header {
+  header.is-open {
+    height: 100%;
     -webkit-transition: height 0.25s ease-in;
     transition: height 0.25s ease-in;
   }
