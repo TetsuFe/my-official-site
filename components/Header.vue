@@ -200,7 +200,7 @@ header.sideB {
   }
 
   #logo {
-    margin: 9px auto 0;
+    margin: 14px auto 0;
   }
 
   #logo, #logo img {
@@ -210,7 +210,7 @@ header.sideB {
   #button-menu {
     display: block;
     position: fixed;
-    top: 16px;
+    top: 20px;
     left: 12px;
     width: 50px;
     height: 50px;
