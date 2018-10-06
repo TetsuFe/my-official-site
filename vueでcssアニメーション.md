@@ -35,8 +35,13 @@ https://note.mu/in_colors_net/n/n1a9bc57fe15d
     name: "Header",
     methods:{
       onClickMenuButton(){
-        if(process.browser) {
-          document.querySelector('#menu').classList.toggle('is-open');
+        if (process.browser) {
+          if(this.isMenuOpen){
+            document.querySelector('header').classList.remove('is-open');
+          }else{
+            document.querySelector('header').classList.add('is-open');
+          }
+          this.isMenuOpen = !this.isMenuOpen;
         }
       }
     }
