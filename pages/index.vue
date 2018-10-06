@@ -13,6 +13,7 @@
         <Keyword/>
       </article>
     </div>
+    <Footer/>
   </div>
 </template>
 
@@ -25,6 +26,7 @@ import Story from '~/components/Story.vue'
 import Character from "../components/Character";
 import Keyword from "../components/Keyword";
 import IntroAnimation2 from "../components/IntroAnimation2";
+import Footer from "../components/Footer";
 
 export default {
   components: {
@@ -35,6 +37,7 @@ export default {
     Story,
     Character,
     IntroAnimation2,
+    Footer,
   }
 }
 </script>
