@@ -4,6 +4,24 @@
   </div>
 </template>
 
+<script>
+  export default {
+    head() {
+      return {
+        meta: [{
+          'og:title': "tetsufe's official site",
+          'og:site_name': "tetsufe's official site",
+          'og:description': 'Nuxt製のポートフォリオサイトです',
+          'og:type': 'website',
+          'og:url': 'https://tetsufe.github.io/my-official-site/',
+          'og:image': 'https://s3-ap-northeast-1.amazonaws.com/myofficialsite/logo.png',
+          'twitter:card': 'summary',
+        }]
+      }
+    },
+  }
+</script>
+
 <style>
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
