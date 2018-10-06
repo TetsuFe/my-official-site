@@ -16,7 +16,10 @@ module.exports = {
       { property: 'og:type', content: 'website' },
       { property: 'og:url', content: 'https://tetsufe.github.io/my-official-site/' },
       { property: 'og:image', content: 'https://s3-ap-northeast-1.amazonaws.com/myofficialsite/logo.png' },
-      { property: 'twitter:card', content: 'summary' },
+      { property: 'og:image:width', content: '600' },
+      { property: 'og:image:height', content: '300' },
+
+      { property: 'twitter:card', content: 'summary_large_image' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
