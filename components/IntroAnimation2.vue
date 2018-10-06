@@ -11,7 +11,7 @@
       </div>
       <div class="intro-square" id="intro-square-3"></div>
       <div class="intro-triangle" id="intro-triangle-3">
-        <p>Webサービス</p>
+        <p>Web開発</p>
       </div>
       <div class="square" id="square-1"></div>
       <div class="isosceles-triangle" id="isosceles-triangle-1"></div>
