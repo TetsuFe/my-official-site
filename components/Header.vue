@@ -6,24 +6,25 @@
           <img src="~/assets/images/common/logo.png" sizes="(min-width:80px) 50vw, 100vw" width="150" srcset="~/assets/images/common/logo.png 200w, ~/assets/images/common/logo.png 400w">
         </a>
       </div>
-      <div id="button-menu">
-        <img src="~/assets/images/icons/menu.svg" sizes="(min-width:100px) 50vw, 100vw" width="42" srcset="~/assets/images/icons/menu.svg 200w, ~/assets/images/icons/menu.svg 400w">
+      <div id="button-menu" @click="onClickMenuButton">
+        <img v-if="!isMenuOpen" src="~/assets/images/icons/menu.svg" sizes="(min-width:100px) 50vw, 100vw" width="42" srcset="~/assets/images/icons/menu.svg 200w, ~/assets/images/icons/menu.svg 400w">
+        <img v-else src="~/assets/images/icons/close.svg" sizes="(min-width:100px) 50vw, 100vw" width="42" srcset="~/assets/images/icons/close.svg 200w, ~/assets/images/icons/close.svg 400w">
       </div>
       <nav id="menu">
-        <div id="menu01" class="menu" v-scroll-to="'#top'">
+        <div id="menu01" class="menu" v-scroll-to="'#top'" @click="onClickMenuButton">
           <!--<img src="http://qruppo.com/img/common/sideA/hart08.png" sizes="(min-width:80px) 50vw, 100vw" width="40" srcset="http://qruppo.com/img/common/sideA/hart08.png 200w, http://qruppo.com/img/common/sideA/hart08@2x.png 400w" class="hart">-->
           <img src="~/assets/images/common/top.png" sizes="(min-width:80px) 50vw, 100vw" width="41" srcset="~/assets/images/common/top.png 200w, ~/assets/images/common/top.png 400w">
         </div>
-        <div id="menu02" class="menu" v-scroll-to="'#news'">
+        <div id="menu02" class="menu" v-scroll-to="'#news'" @click="onClickMenuButton">
           <img src="~/assets/images/common/news.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/news.png 200w, ~/assets/images/common/news.png 400w">
         </div>
-        <div id="menu03" class="menu" v-scroll-to="'#story'">
+        <div id="menu03" class="menu" v-scroll-to="'#story'" @click="onClickMenuButton">
           <img src="~/assets/images/common/story.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/story.png 200w, ~/assets/images/common/story.png 400w">
         </div>
-        <div id="menu04" class="menu" v-scroll-to="'#keyword'">
+        <div id="menu04" class="menu" v-scroll-to="'#keyword'" @click="onClickMenuButton">
           <img src="~/assets/images/common/keyword.png" sizes="(min-width:180px) 50vw, 100vw" width="92" srcset="~/assets/images/common/keyword.png 200w, ~/assets/images/common/keyword.png 400w">
         </div>
-        <div id="menu05" class="menu">
+        <div id="menu05" class="menu" @click="onClickMenuButton">
           <a href="http://swiftfe0.hatenablog.com">
             <img src="~/assets/images/common/blog.png" sizes="(min-width:180px) 50vw, 100vw" width="49" srcset="~/assets/images/common/blog.png 200w, ~/assets/images/common/blog.png 400w">
           </a>
@@ -46,9 +47,22 @@
 </template>
 
 <script>
-    export default {
-        name: "Header"
+  export default {
+    name: "Header",
+    methods: {
+      onClickMenuButton() {
+        if (process.browser) {
+          document.querySelector('header').classList.toggle('is-open');
+          this.isMenuOpen = !this.isMenuOpen;
+        }
+      },
+    },
+    data() {
+      return {
+        "isMenuOpen": false,
+      }
     }
+  }
 </script>
 
 <style scoped>
@@ -169,13 +183,24 @@ header.sideB {
     overflow: hidden;
   }
 
+  header.is-open {
+    height: 100%;
+    -webkit-transition: height 0.25s ease-in;
+    transition: height 0.25s ease-in;
+  }
+
+  header {
+    -webkit-transition: height 0.25s ease-in;
+    transition: height 0.25s ease-in;
+  }
+
   #header {
     width: 100%;
     padding: 0 15px;
   }
 
   #logo {
-    margin: 9px auto 0;
+    margin: 14px auto 0;
   }
 
   #logo, #logo img {
@@ -185,7 +210,7 @@ header.sideB {
   #button-menu {
     display: block;
     position: fixed;
-    top: 16px;
+    top: 20px;
     left: 12px;
     width: 50px;
     height: 50px;
@@ -239,5 +264,6 @@ header.sideB {
   #wrap.sideB #menu .menu {
     border-bottom: 1px solid #333;
   }
+
 }
 </style>
