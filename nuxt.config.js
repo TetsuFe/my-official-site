@@ -10,13 +10,6 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Nuxt製のポートフォリオサイトです' },
-      { property: 'og:title', content: "tetsufe's official site" },
-      { property: 'og:site_name', content: "tetsufe's official site" },
-      { property: 'og:description', content: 'Nuxt製のポートフォリオサイトです' },
-      { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://tetsufe.github.io/my-official-site/' },
-      { property: 'og:image', content: '~/assets/images/common/logo.png' },
-      { property: 'twitter:card', content: 'summary' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
