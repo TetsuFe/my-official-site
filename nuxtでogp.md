@@ -1,4 +1,34 @@
-// `DEPLOY_ENV` が `GH_PAGES` の場合のみ `router.base = '/<repository-name>/'` を追加する
+# nuxtでOGP
+
+なんかog:imageに画像のパスを書いてもうまく反映されなかったので、s3にあげてみた
+
+default.vue
+
+```vue
+<script>
+  export default {
+    head() {
+      return {
+        meta: [
+      { property: 'og:title', content: "tetsufe's official site" },
+      { property: 'og:site_name', content: "tetsufe's official site" },
+      { property: 'og:description', content: 'Nuxt製のポートフォリオサイトです' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://tetsufe.github.io/my-official-site/' },
+      { property: 'og:image', content: 'https://s3-ap-northeast-1.amazonaws.com/myofficialsite/logo.png' },
+      { property: 'twitter:card', content: 'summary' },
+        ]
+      }
+    },
+  }
+</script>
+```
+
+もしくは
+
+nuxt.config.jsに
+```js
+
 module.exports = {
 
   /*
@@ -22,41 +52,4 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-
-  router: {base: '/my-official-site/'},
-  /*
-  ** Customize the progress bar color
-  */
-  loading: { color: '#3B8070' },
-  /*
-  ** Build configuration
-  */
-  build: {
-
-    vendor: ['vue-carousel', 'vue-scrollto'],
-    /*
-    ** Run ESLint on save
-    */
-    extend (config, { isDev, isClient }) {
-      if (isDev && isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-      }
-    },
-      publicPath: '/my-official-site/_nuxt/',
-  },
-
-	plugins:
-    [
-      { src: '~/plugins/vue-carousel.js', ssr: false },
-      '~/plugins/vue-scrollto.js',
-    ]
-
-}
-if (process.env.DEPLOY_ENV === 'LOCAL') {
-    module.exports['router']={base: '/'}
-}
+  ```
