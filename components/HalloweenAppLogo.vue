@@ -1,9 +1,9 @@
 <template>
   <div class="VueToNuxtLogo">
-    <div class="Triangle Triangle--two"/>
-    <div class="Triangle Triangle--one"/>
-    <div class="Triangle Triangle--three"/>
-    <div class="Triangle Triangle--four"/>
+    <div class="Triangle Triangle--two" style="border-bottom: 150px solid #ffe800;"/>
+    <div class="Triangle Triangle--one" style="border-bottom: 180px solid #D35400;"/>
+    <div class="Triangle Triangle--three" style="border-bottom: 120px solid #A04000;"/>
+    <div class="Triangle Triangle--four" style="border-bottom: 60px solid #ffe800;"/>
   </div>
 </template>
 
@@ -29,7 +29,6 @@
   .Triangle--one {
     border-left: 105px solid transparent;
     border-right: 105px solid transparent;
-    border-bottom: 180px solid #D35400;
   }
 
   .Triangle--two {
@@ -38,7 +37,6 @@
     animation: goright 0.5s linear forwards 3.5s;
     border-left: 87.5px solid transparent;
     border-right: 87.5px solid transparent;
-    border-bottom: 150px solid #ffe800;
   }
 
   .Triangle--three {
@@ -47,7 +45,6 @@
     animation: goright 0.5s linear forwards 3.5s;
     border-left: 70px solid transparent;
     border-right: 70px solid transparent;
-    border-bottom: 120px solid #A04000;
   }
 
   .Triangle--four {
@@ -56,7 +53,6 @@
     animation: godown 0.5s linear forwards 3s;
     border-left: 35px solid transparent;
     border-right: 35px solid transparent;
-    border-bottom: 60px solid #ffe800;
   }
 
   @keyframes turn {
