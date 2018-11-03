@@ -141,7 +141,7 @@
   }
 
   #keyword-wrap .name p {
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 2px;
     white-space: pre-wrap;
     padding: 0 0 1px 2px;
@@ -159,8 +159,8 @@
   #keyword-wrap .description {
     position: relative;
     width: 770px;
-    font-weight: 800;
-    font-size: 13px;
+    font-weight: 600;
+    font-size: 16px;
     letter-spacing: .5px;
     white-space: pre-wrap;
   }
