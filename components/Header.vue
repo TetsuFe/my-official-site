@@ -89,12 +89,12 @@ header {
   width: 100%;
   height: 80px;
   z-index: 999;
+  -webkit-box-shadow: rgba(0,0,0,.12) 0 1px 6px,rgba(0,0,0,.12) 0 1px 4px;
+  box-shadow: 0 1px 6px rgba(0,0,0,.12),0 1px 4px rgba(0,0,0,.12);
 }
 
 header.sideA {
   background: hsla(0,0%,100%,.95);
-  -webkit-box-shadow: rgba(0,0,0,.12) 0 1px 6px,rgba(0,0,0,.12) 0 1px 4px;
-  box-shadow: 0 1px 6px rgba(0,0,0,.12),0 1px 4px rgba(0,0,0,.12);
 }
 
 header.sideB {
