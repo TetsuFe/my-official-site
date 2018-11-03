@@ -98,7 +98,7 @@ header.sideA {
 }
 
 header.sideB {
-  background: #fa7f12;
+  background: #D35400;
 }
 
 #header {
