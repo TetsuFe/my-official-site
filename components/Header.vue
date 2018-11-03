@@ -1,5 +1,5 @@
 <template>
-  <header class="sideA">
+  <header v-bind:class="isHalloweenStyle ? 'sideB' : 'sideA'">
     <div id="header">
       <div id="logo">
         <a href="./">
@@ -30,6 +30,10 @@
           </a>
         </div>
       </nav>
+      <div @click="onClickStyleToggle" style="margin-top: 5px; position:absolute; right:0">
+        <img v-if="isHalloweenStyle" src="~/assets/images/icons/switch-normal.svg" width="140px" height="70px">
+        <img v-else src="~/assets/images/icons/switch-halloween.svg" width="140px" height="70px">
+      </div>
       <!--
       <div id="changer-wrap">
         <div class="button-wrap">
@@ -49,12 +53,18 @@
 <script>
   export default {
     name: "Header",
+    computed: {
+      isHalloweenStyle () { return this.$store.state.isHalloweenStyle }
+    },
     methods: {
       onClickMenuButton() {
         if (process.browser) {
           document.querySelector('header').classList.toggle('is-open');
           this.isMenuOpen = !this.isMenuOpen;
         }
+      },
+      onClickStyleToggle: function(){
+        this.$store.commit('toggleSiteStyle');
       },
     },
     data() {
@@ -70,7 +80,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 80px;
   z-index: 999;
 }
@@ -90,7 +100,7 @@ header.sideB {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  width: 1280px;
+  width: 100%;
   height: 80px;
   margin: 0 auto;
 }
@@ -166,18 +176,17 @@ header.sideB {
   transform: translateY(-80px);
 }
 
-@media screen and (max-width:1280px) {
+@media screen and (min-width:900px) {
   header {
     padding: 0 40px;
-    overflow-x: scroll;
   }
 
   #header {
-    width: 1320px;
+    width: 900px;
   }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:900px) {
   header {
     padding: 0;
     overflow: hidden;
