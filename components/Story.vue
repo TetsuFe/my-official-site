@@ -68,15 +68,6 @@
     padding-left: 6px;
   }
 
-  #wrap.sideA .title-wrap h3 {
-    color: #50aa32!important;
-    border-bottom: 4px solid #50aa32;
-  }
-
-  #wrap.sideA .title-wrap p {
-    color: #50aa32!important;
-  }
-
   .title-wrap h3 {
     width: 180px;
     font-size: 21px;
@@ -90,9 +81,24 @@
     padding-left: 6px;
   }
 
-  #wrap.sideB .title-wrap h3 {
-    color: #f20000;
+  #wrap.sideA .title-wrap h3 {
+    color: #50aa32!important;
+    border-bottom: 4px solid #50aa32;
   }
+
+  #wrap.sideA .title-wrap p {
+    color: #50aa32!important;
+  }
+
+  #wrap.sideB .title-wrap p {
+    color: black!important;
+  }
+
+  #wrap.sideB .title-wrap h3 {
+    color: black!important;
+    border-bottom: 4px solid #ffe800;
+  }
+
 
   .title-wrap {
     margin-top: 14px;
