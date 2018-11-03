@@ -3,7 +3,8 @@
     <div id="header">
       <div id="logo">
         <a href="./">
-          <img src="~/assets/images/common/logo.png" sizes="(min-width:80px) 50vw, 100vw" width="150" srcset="~/assets/images/common/logo.png 200w, ~/assets/images/common/logo.png 400w">
+          <img v-if="!isHalloweenStyle" src="~/assets/images/common/logo.png" sizes="(min-width:80px) 50vw, 100vw" width="150" srcset="~/assets/images/common/logo.png 200w, ~/assets/images/common/logo.png 400w">
+          <img v-else src="~/assets/images/common/logo-halloween.png" sizes="(min-width:80px) 50vw, 100vw" width="150" srcset="~/assets/images/common/logo-halloween.png 200w, ~/assets/images/common/logo-halloween.png 400w">
         </a>
       </div>
       <div id="button-menu" @click="onClickMenuButton">
@@ -13,20 +14,25 @@
       <nav id="menu">
         <div id="menu01" class="menu" v-scroll-to="'#top'" @click="onClickMenuButton">
           <!--<img src="http://qruppo.com/img/common/sideA/hart08.png" sizes="(min-width:80px) 50vw, 100vw" width="40" srcset="http://qruppo.com/img/common/sideA/hart08.png 200w, http://qruppo.com/img/common/sideA/hart08@2x.png 400w" class="hart">-->
-          <img src="~/assets/images/common/top.png" sizes="(min-width:80px) 50vw, 100vw" width="41" srcset="~/assets/images/common/top.png 200w, ~/assets/images/common/top.png 400w">
+          <img v-if="!isHalloweenStyle" src="~/assets/images/common/top.png" sizes="(min-width:80px) 50vw, 100vw" width="41" srcset="~/assets/images/common/top.png 200w, ~/assets/images/common/top.png 400w">
+          <img v-else src="~/assets/images/common/top-halloween.png" sizes="(min-width:80px) 50vw, 100vw" width="41" srcset="~/assets/images/common/top-halloween.png 200w, ~/assets/images/common/top-halloween.png 400w">
         </div>
         <div id="menu02" class="menu" v-scroll-to="'#news'" @click="onClickMenuButton">
-          <img src="~/assets/images/common/news.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/news.png 200w, ~/assets/images/common/news.png 400w">
+          <img v-if="!isHalloweenStyle" src="~/assets/images/common/news.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/news.png 200w, ~/assets/images/common/news.png 400w">
+          <img v-else src="~/assets/images/common/news-halloween.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/news-halloween.png 200w, ~/assets/images/common/news-halloween.png 400w">
         </div>
         <div id="menu03" class="menu" v-scroll-to="'#story'" @click="onClickMenuButton">
-          <img src="~/assets/images/common/story.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/story.png 200w, ~/assets/images/common/story.png 400w">
+          <img v-if="!isHalloweenStyle" src="~/assets/images/common/story.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/story.png 200w, ~/assets/images/common/story.png 400w">
+          <img v-else src="~/assets/images/common/story-halloween.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/story-halloween.png 200w, ~/assets/images/common/story-halloween.png 400w">
         </div>
         <div id="menu04" class="menu" v-scroll-to="'#keyword'" @click="onClickMenuButton">
-          <img src="~/assets/images/common/keyword.png" sizes="(min-width:180px) 50vw, 100vw" width="92" srcset="~/assets/images/common/keyword.png 200w, ~/assets/images/common/keyword.png 400w">
+          <img v-if="!isHalloweenStyle" src="~/assets/images/common/keyword.png" sizes="(min-width:180px) 50vw, 100vw" width="92" srcset="~/assets/images/common/keyword.png 200w, ~/assets/images/common/keyword.png 400w">
+          <img v-else src="~/assets/images/common/keyword-halloween.png" sizes="(min-width:180px) 50vw, 100vw" width="92" srcset="~/assets/images/common/keyword-halloween.png 200w, ~/assets/images/common/keyword-halloween.png 400w">
         </div>
         <div id="menu05" class="menu" @click="onClickMenuButton">
           <a href="http://swiftfe0.hatenablog.com">
-            <img src="~/assets/images/common/blog.png" sizes="(min-width:180px) 50vw, 100vw" width="49" srcset="~/assets/images/common/blog.png 200w, ~/assets/images/common/blog.png 400w">
+            <img v-if="!isHalloweenStyle" src="~/assets/images/common/blog.png" sizes="(min-width:180px) 50vw, 100vw" width="49" srcset="~/assets/images/common/blog.png 200w, ~/assets/images/common/blog.png 400w">
+            <img v-else src="~/assets/images/common/blog-halloween.png" sizes="(min-width:180px) 50vw, 100vw" width="49" srcset="~/assets/images/common/blog-halloween.png 200w, ~/assets/images/common/blog-halloween.png 400w">
           </a>
         </div>
       </nav>
@@ -92,7 +98,7 @@ header.sideA {
 }
 
 header.sideB {
-  background: #000;
+  background: #fa7f12;
 }
 
 #header {
@@ -133,22 +139,6 @@ header.sideB {
   -webkit-transform: scale(1);
   transform: scale(1);
   opacity: 1;
-}
-
-#wrap.sideB header.sideB #menu .menu:before {
-  content: "";
-  position: absolute;
-  top: calc(50% - 2px);
-  left: 0;
-  background: #f20000;
-  width: 100%;
-  height: 2px;
-  -webkit-transition: -webkit-transform .25s ease;
-  transition: -webkit-transform .25s ease;
-  transition: transform .25s ease;
-  transition: transform .25s ease,-webkit-transform .25s ease;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
 }
 
 #wrap:not(.sp).sideB #menu .menu:hover:before {
@@ -261,17 +251,18 @@ header.sideB {
     border-top: 1px solid #e7e7e7;
   }
 
+  #wrap.sideB #menu {
+    border-top: 1px solid #e7e7e7;
+  }
+
   #wrap.sideA #menu .menu {
     padding-top: 7px;
     border-bottom: 1px solid #e7e7e7;
   }
 
-  #wrap.sideB #menu {
-    border-top: 1px solid #333;
-  }
-
   #wrap.sideB #menu .menu {
-    border-bottom: 1px solid #333;
+    padding-top: 7px;
+    border-bottom: 1px solid #e7e7e7;
   }
 
 }
