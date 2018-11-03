@@ -265,7 +265,8 @@
     }
 
     #news-list {
-      width: 100%;
+      margin: auto;
+      width: 90%;
     }
 
     #news-list .item-wrap .plane, #news-list .item-wrap a {
