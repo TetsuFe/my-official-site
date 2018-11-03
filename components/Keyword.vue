@@ -94,12 +94,25 @@
     border-bottom: 4px solid #50aa32;
   }
 
+  #wrap.sideB #keyword-wrap .contents-title h3 {
+    color: black!important;
+    border-bottom: 4px solid black;
+  }
+
   #wrap.sideA #keyword-wrap .contents-title p {
     color: #50aa32!important;
   }
 
+  #wrap.sideB #keyword-wrap .contents-title p {
+    color: #ffe800!important;
+  }
+
   #wrap.sideA #keyword-wrap .keyword {
     border: 2px solid #50aa32;
+  }
+
+  #wrap.sideB #keyword-wrap .keyword {
+    border: 2px solid #A04000;
   }
 
   #keyword-wrap .keyword {
@@ -139,6 +152,10 @@
     color: #50aa32;
   }
 
+  #wrap.sideB #keyword-wrap .name p {
+    color: #A04000;
+  }
+
   #keyword-wrap .description {
     position: relative;
     width: 770px;
@@ -161,6 +178,10 @@
 
   #wrap.sideA #keyword-wrap .description:before {
     background: #50aa32;
+  }
+
+  #wrap.sideB #keyword-wrap .description:before {
+    background: #A04000;
   }
 
   @media screen and (max-width:1120px) {
