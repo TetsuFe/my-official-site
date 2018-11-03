@@ -1,9 +1,8 @@
 <template>
   <div id="wrap" v-bind:class="isHalloweenStyle ? 'sideB' : 'sideA'">
     <Header/>
-    <!--<IntroAnimation2 v-if="!this.$store.state.isIntroAnimationEnd"/>-->
-    <!--<div id="after-animation" v-if="this.$store.state.isIntroAnimationEnd">-->
-    <div id="after-animation">
+    <IntroAnimation2 v-if="!this.$store.state.isIntroAnimationEnd"/>
+    <div id="after-animation" v-if="this.$store.state.isIntroAnimationEnd">
       <article>
         <Top/>
         <News/>
