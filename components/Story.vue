@@ -49,7 +49,14 @@
     font-size: 20px;
     line-height: 28px;
     font-weight: 800;
+  }
+
+  #wrap.sideA #story-wrap .story{
     color: #767b85;
+  }
+
+  #wrap.sideB #story-wrap .story{
+    color: #363b55;
   }
 
   .title-wrap h3 {
