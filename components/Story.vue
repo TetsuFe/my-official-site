@@ -4,7 +4,8 @@
       <!--<img src="img/story/sideA/title.png" sizes="(min-width:472px) 50vw, 100vw" srcset="img/story/sideA/title.png 200w, img/story/sideA/title@2x.png 400w" width="236">-->
       <p>ストーリー</p>
       <h3>Story</h3>
-      <AppLogo/>
+      <HalloweenAppLogo v-if="isHalloweenStyle"/>
+      <AppLogo v-else/>
     </div>
     <div id="story-wrap">
       <div class="story">
@@ -18,10 +19,15 @@
 
 <script>
   import AppLogo from '~/components/AppLogo.vue'
+  import HalloweenAppLogo from '~/components/HalloweenAppLogo.vue'
 
   export default {
     components: {
       AppLogo,
+      HalloweenAppLogo,
+    },
+    computed: {
+      isHalloweenStyle () { return this.$store.state.isHalloweenStyle }
     },
     name: "Story"
   }
