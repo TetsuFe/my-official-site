@@ -4,7 +4,8 @@
       <!--<img src="img/story/sideA/title.png" sizes="(min-width:472px) 50vw, 100vw" srcset="img/story/sideA/title.png 200w, img/story/sideA/title@2x.png 400w" width="236">-->
       <p>ストーリー</p>
       <h3>Story</h3>
-      <AppLogo/>
+      <HalloweenAppLogo v-if="isHalloweenStyle"/>
+      <AppLogo v-else/>
     </div>
     <div id="story-wrap">
       <div class="story">
@@ -18,10 +19,15 @@
 
 <script>
   import AppLogo from '~/components/AppLogo.vue'
+  import HalloweenAppLogo from '~/components/HalloweenAppLogo.vue'
 
   export default {
     components: {
       AppLogo,
+      HalloweenAppLogo,
+    },
+    computed: {
+      isHalloweenStyle () { return this.$store.state.isHalloweenStyle }
     },
     name: "Story"
   }
@@ -43,24 +49,18 @@
     font-size: 20px;
     line-height: 28px;
     font-weight: 800;
+  }
+
+  #wrap.sideA #story-wrap .story{
     color: #767b85;
   }
 
-  #wrap.sideB .title-wrap h3 {
-    font-size: 24px;
+  #wrap.sideB #story-wrap .story{
+    color: #363b55;
   }
 
-  #wrap.sideB .title-wrap p {
-    font-size: 10px;
-  }
-
-  #wrap.sideB .title-wrap {
-    margin-bottom: 40px;
-  }
-
-  #wrap.sideA .title-wrap h3 {
+  .title-wrap h3 {
     width: 224px;
-    color: #0082f2!important;
     font-family: Arvo;
     font-weight: 700;
     font-size: 25px;
@@ -72,13 +72,25 @@
     border-bottom: 4px solid #0082f2;
   }
 
-  #wrap.sideA .title-wrap p {
-    color: #0082f2!important;
+  .title-wrap p {
     font-weight: 500;
     font-size: 12px;
     line-height: 1;
     letter-spacing: 6px;
     text-align: center;
+    padding-left: 6px;
+  }
+
+  .title-wrap h3 {
+    width: 180px;
+    font-size: 21px;
+    letter-spacing: 6px;
+    padding-left: 6px;
+    margin: 0 auto 56px;
+  }
+
+  .title-wrap p {
+    font-size: 10px;
     padding-left: 6px;
   }
 
@@ -91,48 +103,17 @@
     color: #50aa32!important;
   }
 
-  #wrap.sideA .title-wrap h3 {
-    width: 180px;
-    font-size: 21px;
-    letter-spacing: 6px;
-    padding-left: 6px;
-    margin: 0 auto 56px;
-  }
-
-  #wrap.sideA .title-wrap p {
-    font-size: 10px;
-    padding-left: 6px;
-  }
-
-  #wrap.sideB .title-wrap {
-    position: relative;
-    width: 320px;
+  #wrap.sideB .title-wrap p {
+    color: black!important;
   }
 
   #wrap.sideB .title-wrap h3 {
-    color: #f20000;
-    font-family: Roboto Condensed;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.2;
-    letter-spacing: 5px;
+    color: black!important;
+    border-bottom: 4px solid #ffe800;
   }
 
-  #wrap.sideB .title-wrap p{
-    font-size: 12px;
-    letter-spacing: 4px;
-    padding-left: 1px;
-  }
 
-  #wrap.sideB .title-wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    margin: 180px 0 150px;
-  }
-
-  #wrap.sideA .title-wrap {
+  .title-wrap {
     margin-top: 14px;
   }
 

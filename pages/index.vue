@@ -1,5 +1,5 @@
 <template>
-  <div id="wrap" class="sideA">
+  <div id="wrap" v-bind:class="isHalloweenStyle ? 'sideB' : 'sideA'">
     <Header/>
     <IntroAnimation2 v-if="!this.$store.state.isIntroAnimationEnd"/>
     <div id="after-animation" v-if="this.$store.state.isIntroAnimationEnd">
@@ -38,7 +38,10 @@ export default {
     Character,
     IntroAnimation2,
     Footer,
-  }
+  },
+  computed: {
+    isHalloweenStyle () { return this.$store.state.isHalloweenStyle }
+  },
 }
 </script>
 
@@ -57,6 +60,10 @@ export default {
   }
   #intro-animation {
     vertical-align: middle;
+  }
+
+  #wrap.sideB {
+    background-color: #fa7f12;
   }
 </style>
 
