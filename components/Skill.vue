@@ -57,18 +57,15 @@
 
   #skill .skill-desc {
     text-align: center;
+    width: 90%;
     margin: auto;
   }
 
   #skill .skill-desc-title {
     margin-bottom: 3px;
     font-size:26px;
-    padding: 24px;
+    padding: 24px 0px;
     font-weight: bold;
-  }
-
-  #skill .skill-desc-title i{
-    margin-right: 12px;
   }
 
   #skill .rate {
