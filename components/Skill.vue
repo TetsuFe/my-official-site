@@ -1,40 +1,36 @@
 <template>
-  <div id="skill">
-    <div class="card-wrapper">
-      <div class="card">
-        <div class="skill-desc">
-          <h3 class="skill-desc-title">{{skill.title}}</h3>
-          <p>{{skill.descs}}</p>
-          <table class="table table-borderless">
-            <thead>
-            <tr>
-              <th scope="col">技術</th>
-              <th scope="col">経験年数</th>
-              <th scope="col">スキル</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-              <th scope="row">{{skill.sub1.title}}</th>
-              <td>{{skill.sub1.howlong}}</td>
-              <td><span class="rating"><p :class="'rate rate'+skill.sub1.howlong"></p></span></td>
-            </tr>
-            <tr>
-              <th scope="row">{{skill.sub2.title}}</th>
-              <td>{{skill.sub2.howlong}}</td>
-              <td><span class="rating"><p :class="'rate rate'+skill.sub2.howlong"></p></span></td>
-            </tr>
-            <tr>
-              <th scope="row">{{skill.sub3.title}}</th>
-              <td>{{skill.sub3.howlong}}</td>
-              <td><span class="rating"><p :class="'rate rate'+skill.sub3.howlong"></p></span></td>
-            </tr>
-            </tbody>
-          </table>
-        </div>
+    <div id="card-inner">
+      <div class="skill-desc">
+        <h3 class="skill-desc-title">{{skill.title}}</h3>
+        <p>{{skill.descs}}</p>
+        <table class="table table-borderless">
+          <thead>
+          <tr>
+            <th scope="col">技術</th>
+            <th scope="col">経験年数</th>
+            <th scope="col">スキル</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th scope="row">{{skill.sub1.title}}</th>
+            <td>{{skill.sub1.howlong}}</td>
+            <td><span class="rating"><p :class="'rate rate'+skill.sub1.rate"></p></span></td>
+          </tr>
+          <tr>
+            <th scope="row">{{skill.sub2.title}}</th>
+            <td>{{skill.sub2.howlong}}</td>
+            <td><span class="rating"><p :class="'rate rate'+skill.sub2.rate"></p></span></td>
+          </tr>
+          <tr>
+            <th scope="row">{{skill.sub3.title}}</th>
+            <td>{{skill.sub3.howlong}}</td>
+            <td><span class="rating"><p :class="'rate rate'+skill.sub3.rate"></p></span></td>
+          </tr>
+          </tbody>
+        </table>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -47,32 +43,8 @@
 </script>
 
 <style scoped>
-  #skill .card-wrapper {
-    width: 80%;
+  #card-inner{
     margin: 0 auto;
-    padding: 20px 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
-
-  #skill .card {
-    flex-basis: 46%;
-    margin-bottom: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    background-color: #f7f8fb;
   }
 
   #skill .skill-icon {
