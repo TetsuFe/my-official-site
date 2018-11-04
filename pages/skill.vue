@@ -18,6 +18,9 @@
       Header,
       Footer,
     },
+    computed: {
+      isHalloweenStyle () { return this.$store.state.isHalloweenStyle }
+    },
     name: "skill"
   }
 </script>
