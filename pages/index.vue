@@ -1,8 +1,8 @@
 <template>
   <div id="wrap" v-bind:class="isHalloweenStyle ? 'sideB' : 'sideA'">
     <Header/>
-    <IntroAnimation2 v-if="!this.$store.state.isIntroAnimationEnd"/>
-    <div id="after-animation" v-if="this.$store.state.isIntroAnimationEnd">
+    <IntroAnimation2 v-if="!isAnimationEnd"/>
+    <div id="after-animation" v-else>
       <article>
         <Top/>
         <News/>
@@ -40,7 +40,8 @@ export default {
     Footer,
   },
   computed: {
-    isHalloweenStyle () { return this.$store.state.isHalloweenStyle }
+    isHalloweenStyle () { return this.$store.state.isHalloweenStyle },
+    isAnimationEnd(){ return this.$store.state.isIntroAnimationEnd }
   },
 }
 </script>
