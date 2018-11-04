@@ -3,8 +3,8 @@
     <div class="card-wrapper">
       <div class="card">
         <div class="skill-desc">
-          <h3 class="skill-desc-title">フロントエンド</h3>
-          <p>直近ではAngularJSを使用して開発していました。</p>
+          <h3 class="skill-desc-title">{{skill.title}}</h3>
+          <p>{{skill.descs}}</p>
           <table class="table table-borderless">
             <thead>
             <tr>
@@ -15,19 +15,19 @@
             </thead>
             <tbody>
             <tr>
-              <th scope="row">javascrpt</th>
-              <td>2年</td>
-              <td><span class="rating"><p class="rate rate5"></p></span></td>
+              <th scope="row">{{skill.sub1.title}}</th>
+              <td>{{skill.sub1.howlong}}</td>
+              <td><span class="rating"><p :class="'rate rate'+skill.sub1.howlong"></p></span></td>
             </tr>
             <tr>
-              <th scope="row">jQuery</th>
-              <td>2年</td>
-              <td><span class="rating"><p class="rate rate3"></p></span></td>
+              <th scope="row">{{skill.sub2.title}}</th>
+              <td>{{skill.sub2.howlong}}</td>
+              <td><span class="rating"><p :class="'rate rate'+skill.sub2.howlong"></p></span></td>
             </tr>
             <tr>
-              <th scope="row">AngularJS</th>
-              <td>1年</td>
-              <td><span class="rating"><p class="rate rate4"></p></span></td>
+              <th scope="row">{{skill.sub3.title}}</th>
+              <td>{{skill.sub3.howlong}}</td>
+              <td><span class="rating"><p :class="'rate rate'+skill.sub3.howlong"></p></span></td>
             </tr>
             </tbody>
           </table>
@@ -39,7 +39,10 @@
 
 <script>
   export default {
-    name: "Skill"
+    name: "Skill",
+    props: [
+      "skill",
+    ],
   }
 </script>
 

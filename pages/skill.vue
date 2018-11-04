@@ -2,19 +2,19 @@
   <div id="wrap" v-bind:class="isHalloweenStyle ? 'sideB' : 'sideA'">
     <Header/>
     <main style="margin-top:80px">
-      <Skill/>
+      <SkillList/>
     </main>
     <Footer/>
   </div>
 </template>
 
 <script>
-  import Skill from '~/components/Skill';
+  import SkillList from '~/components/SkillList';
   import Header from '~/components/Header';
   import Footer from '~/components/Footer';
   export default {
     components: {
-      Skill,
+      SkillList,
       Header,
       Footer,
     },
