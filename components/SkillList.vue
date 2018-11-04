@@ -148,7 +148,7 @@
     background-color: #f7f8fb;
   }
 
-  @media screen and (max-width:768px) {
+  @media screen and (max-width:1200px) {
     #skill .card {
       flex-basis: 100%;
     }
