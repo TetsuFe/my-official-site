@@ -3,7 +3,7 @@
     <div class="card-wrapper">
       <div class="card">
         <div class="skill-desc">
-          <h3 class="skill-desc-title"><i class="fas fa-desktop"></i>フロントエンド</h3>
+          <h3 class="skill-desc-title">フロントエンド</h3>
           <p>直近ではAngularJSを使用して開発していました。</p>
           <table class="table table-borderless">
             <thead>
@@ -26,8 +26,8 @@
             </tr>
             <tr>
               <th scope="row">AngularJS</th>
-              <td>1年
-              </td><td><span class="rating"><p class="rate rate4"></p></span></td>
+              <td>1年</td>
+              <td><span class="rating"><p class="rate rate4"></p></span></td>
             </tr>
             </tbody>
           </table>
@@ -69,6 +69,7 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    background-color: #f7f8fb;
   }
 
   #skill .skill-icon {
@@ -80,8 +81,8 @@
   }
 
   #skill .skill-desc {
-    flex-basis: calc(100% - 75px - 30px);
     text-align: center;
+    margin: auto;
   }
 
   #skill .skill-desc-title {
@@ -124,28 +125,34 @@
   }
 
   #skill .rate1:after {
+    color: #efc14e;
     width: 20px;
   }
 
   #skill .rate2:after {
+    color: #efc14e;
     width: 40px;
   }
 
   #skill .rate3:after {
+    color: #efc14e;
     width: 60px;
   }
 
   #skill .rate4:after {
+    color: #efc14e;
     width: 80px;
   }
 
   #skill .rate5:after {
+    color: #efc14e;
     width: 100px;
   }
 
   .skill-desc table {
     width: 100%;
     margin-top: 20px;
+    margin-bottom: 40px;
   }
 
 </style>
