@@ -1,6 +1,6 @@
 <template>
   <div id="wrap" v-bind:class="isHalloweenStyle ? 'sideB' : 'sideA'">
-    <Header/>
+    <NotIndexPageHeader/>
     <main style="margin-top:80px">
       <div class="title-wrap">
         <p>スキル</p>
@@ -14,12 +14,12 @@
 
 <script>
   import SkillList from '~/components/SkillList';
-  import Header from '~/components/Header';
+  import NotIndexPageHeader from '~/components/NotIndexPageHeader';
   import Footer from '~/components/Footer';
   export default {
     components: {
       SkillList,
-      Header,
+      NotIndexPageHeader,
       Footer,
     },
     computed: {
