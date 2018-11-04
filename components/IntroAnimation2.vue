@@ -26,24 +26,24 @@
 </template>
 
 <script>
-    export default {
-        created(context){
-          const parent = this;
-          if (process.browser) {
-            var el = document.querySelector('#intro-animation');
-            if(el !== null) {
-              el.addEventListener('animationend', function (event) {
-                // animation終了時の処理
-                // isIntroAnimationEnd
-                if (event.animationName.indexOf('fade-out') != -1) {
-                  parent.$store.commit('setIntroAnimationEnd')
-                }
-              });
+  export default {
+    created(context){
+      const parent = this;
+      if (process.browser) {
+        var el = document.querySelector('#intro-animation');
+        if(el !== null) {
+          el.addEventListener('animationend', function (event) {
+            // animation終了時の処理
+            // isIntroAnimationEnd
+            if (event.animationName.indexOf('fade-out') != -1) {
+              parent.$store.commit('setIntroAnimationEnd')
             }
-          }
-        },
-        name: "IntroAnimation2",
-    }
+          });
+        }
+      }
+    },
+    name: "IntroAnimation2",
+  }
 </script>
 
 <style scoped>
