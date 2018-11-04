@@ -2,7 +2,7 @@
   <div id="wrap" v-bind:class="isHalloweenStyle ? 'sideB' : 'sideA'">
     <Header/>
     <IntroAnimation2 v-if="!isAnimationEnd"/>
-    <div id="after-animation" v-if="isAnimationEnd">
+    <div id="after-animation" v-else>
       <article>
         <Top/>
         <News/>

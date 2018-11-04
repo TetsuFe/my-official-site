@@ -1,4 +1,4 @@
-<template>
+<template xmlns:button="http://www.w3.org/1999/html">
   <section id="intro-animation">
     <div id="triangles">
       <div class="intro-square" id="intro-square-1"></div>
@@ -13,6 +13,7 @@
       <div class="intro-triangle" id="intro-triangle-3">
         <p>Web開発</p>
       </div>
+      <button type="button" id="animationSkipLink" @click="skipAnimation">skip()</button>
       <div class="square" id="square-1"></div>
       <div class="isosceles-triangle" id="isosceles-triangle-1"></div>
       <div class="square" id="square-2"></div>
@@ -40,6 +41,11 @@
             }
           });
         }
+      }
+    },
+    methods: {
+      skipAnimation(){
+        this.$store.commit('setIntroAnimationEnd')
       }
     },
     name: "IntroAnimation2",
@@ -395,6 +401,27 @@
   @-webkit-keyframes fade-out {
     0% { opacity: 1;}
     100% { opacity: 0;}
+  }
+
+  button#animationSkipLink{
+    position: absolute;
+    top: 650px;
+    left: 70%;
+    z-index: 10000;
+    background-color: #50aa32;
+    width: 28%;
+    color: white;
+    cursor:pointer;
+    border-style: none;
+    font-size: 24px;
+    border-radius: 20px;
+  }
+
+
+  @media (max-width: 768px) {
+    button#animationSkipLink {
+      top: 400px;
+    }
   }
 
 </style>
