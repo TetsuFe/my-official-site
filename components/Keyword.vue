@@ -11,17 +11,17 @@
             <div class="name">
               <p>エンジニア</p>
             </div>
-            <p class="description">プログラミングで何かを作りたい。でもプログラミングの８割は苦痛。好きな言語とかは特にないが、新しいものに抵抗はない。</p>
+            <p class="description">プログラミングで何かを作りたい。でもプログラミングは結構苦痛。好きな言語とかは特にないので、なんでも触ります。<a href="./skill">スキルセット</a></p>
           </div>
           <div class="keyword">
             <div class="name">
               <p>Webサービス開発</p>
             </div>
-            <p class="description">Webで有名になりたい。大勢の人が使うサービスを作って褒められたい。北大生限定フリマWebサイト「<a href="https://hufurima.com/">ホクマ</a>」を運営しています。</p>
+            <p class="description">「人生に楽しみを提供する、もしくは楽しい人生を切り拓く手助けをする」サービスが作りたい。具体的には、ノベルゲーム、学習サービス、ユーザ投稿＆いいねがつくサービス、オフラインにつながるサービスが作りたいです。北大生限定フリマWebアプリ「<a href="https://hufurima.com/">ホクマ</a>」を運営しています。</p>
           </div>
           <div class="keyword">
             <div class="name">
-              <p>育成</p>
+              <p>教育・育成</p>
             </div>
             <p class="description">誰かに何かを教えることが好き。気軽に質問される人になりたい。</p>
           </div>
