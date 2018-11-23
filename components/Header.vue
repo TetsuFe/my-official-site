@@ -17,23 +17,23 @@
           <img v-if="!isHalloweenStyle" src="~/assets/images/common/top.png" sizes="(min-width:80px) 50vw, 100vw" width="41" srcset="~/assets/images/common/top.png 200w, ~/assets/images/common/top.png 400w">
           <img v-else src="~/assets/images/common/top-halloween.png" sizes="(min-width:80px) 50vw, 100vw" width="41" srcset="~/assets/images/common/top-halloween.png 200w, ~/assets/images/common/top-halloween.png 400w">
         </div>
-        <div id="menu02" class="menu" v-scroll-to="'#news'" @click="onClickMenuButton">
-          <img v-if="!isHalloweenStyle" src="~/assets/images/common/news.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/news.png 200w, ~/assets/images/common/news.png 400w">
-          <img v-else src="~/assets/images/common/news-halloween.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/news-halloween.png 200w, ~/assets/images/common/news-halloween.png 400w">
-        </div>
-        <div id="menu03" class="menu" v-scroll-to="'#story'" @click="onClickMenuButton">
-          <img v-if="!isHalloweenStyle" src="~/assets/images/common/story.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/story.png 200w, ~/assets/images/common/story.png 400w">
-          <img v-else src="~/assets/images/common/story-halloween.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/story-halloween.png 200w, ~/assets/images/common/story-halloween.png 400w">
-        </div>
-        <div id="menu04" class="menu" v-scroll-to="'#keyword'" @click="onClickMenuButton">
-          <img v-if="!isHalloweenStyle" src="~/assets/images/common/keyword.png" sizes="(min-width:180px) 50vw, 100vw" width="92" srcset="~/assets/images/common/keyword.png 200w, ~/assets/images/common/keyword.png 400w">
-          <img v-else src="~/assets/images/common/keyword-halloween.png" sizes="(min-width:180px) 50vw, 100vw" width="92" srcset="~/assets/images/common/keyword-halloween.png 200w, ~/assets/images/common/keyword-halloween.png 400w">
-        </div>
-        <div id="menu05" class="menu" @click="onClickMenuButton">
+        <div id="menu02" class="menu" @click="onClickMenuButton">
           <a href="./skill">
             <img v-if="!isHalloweenStyle" src="~/assets/images/common/skill.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/skill.png 200w, ~/assets/images/common/skill.png 400w">
             <img v-else src="~/assets/images/common/skill-halloween.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/skill-halloween.png 200w, ~/assets/images/common/skill-halloween.png 400w">
           </a>
+        </div>
+        <div id="menu03" class="menu" v-scroll-to="'#news'" @click="onClickMenuButton">
+          <img v-if="!isHalloweenStyle" src="~/assets/images/common/news.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/news.png 200w, ~/assets/images/common/news.png 400w">
+          <img v-else src="~/assets/images/common/news-halloween.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/news-halloween.png 200w, ~/assets/images/common/news-halloween.png 400w">
+        </div>
+        <div id="menu04" class="menu" v-scroll-to="'#story'" @click="onClickMenuButton">
+          <img v-if="!isHalloweenStyle" src="~/assets/images/common/story.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/story.png 200w, ~/assets/images/common/story.png 400w">
+          <img v-else src="~/assets/images/common/story-halloween.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/story-halloween.png 200w, ~/assets/images/common/story-halloween.png 400w">
+        </div>
+        <div id="menu05" class="menu" v-scroll-to="'#keyword'" @click="onClickMenuButton">
+          <img v-if="!isHalloweenStyle" src="~/assets/images/common/keyword.png" sizes="(min-width:180px) 50vw, 100vw" width="92" srcset="~/assets/images/common/keyword.png 200w, ~/assets/images/common/keyword.png 400w">
+          <img v-else src="~/assets/images/common/keyword-halloween.png" sizes="(min-width:180px) 50vw, 100vw" width="92" srcset="~/assets/images/common/keyword-halloween.png 200w, ~/assets/images/common/keyword-halloween.png 400w">
         </div>
       </nav>
       <div @click="onClickStyleToggle" style="margin-top: 5px; position:absolute; right:0">
