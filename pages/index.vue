@@ -5,6 +5,7 @@
     <div id="after-animation" v-else>
       <article>
         <Top/>
+        <SkillSection/>
         <News/>
         <Story/>
         <!-- TODO: 頑張ってキャラクターのとこ作る
@@ -21,6 +22,7 @@
 
 import Header from '~/components/Header.vue'
 import Top from '~/components/Top.vue'
+import SkillSection from '~/components/SkillSection.vue'
 import News from '~/components/News.vue'
 import Story from '~/components/Story.vue'
 import Character from "../components/Character";
@@ -33,6 +35,7 @@ export default {
     Keyword,
     Header,
     Top,
+    SkillSection,
     News,
     Story,
     Character,
