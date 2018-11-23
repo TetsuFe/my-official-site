@@ -10,6 +10,36 @@
           <div class="item-wrap">
             <a href="#">
               <div class="thumb">
+                <img src="~/assets/images/icons/new.svg" sizes="(min-width:160px) 50vw, 100vw" width="80">
+              </div>
+              <div class="date">
+                <p>2018.11.23</p>
+              </div>
+              <div class="text">
+                <p>本サイトのKeywordなどを更新しました！</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-wrap">
+            <a href="https://hufurima.com">
+              <div class="thumb">
+                <img src="~/assets/images/icons/new.svg" sizes="(min-width:160px) 50vw, 100vw" width="80">
+              </div>
+              <div class="date">
+                <p>2018.10.1</p>
+              </div>
+              <div class="text">
+                <p>北大生限定Webフリマアプリ「ホクマ」のベータ版が公式リリースされました！</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-wrap">
+            <a href="#">
+              <div class="thumb">
                 <!--<img src="img/news/sideA/thumb/thumb35.jpg" sizes="(min-width:160px) 50vw, 100vw" width="80" srcset="img/news/sideA/thumb/thumb35.jpg 200w, img/news/sideA/thumb/thumb35@2x.jpg 400w">-->
                 <img src="~/assets/images/icons/new.svg" sizes="(min-width:160px) 50vw, 100vw" width="80">
               </div>
