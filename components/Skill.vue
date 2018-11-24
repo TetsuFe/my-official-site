@@ -125,6 +125,8 @@
     width: 100%;
     margin-top: 20px;
     margin-bottom: 40px;
+    table-layout: fixed;
+    word-wrap: break-word;
   }
 
 </style>
