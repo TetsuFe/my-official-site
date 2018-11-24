@@ -20,6 +20,12 @@
             <img v-else src="~/assets/images/common/top-halloween.png" sizes="(min-width:80px) 50vw, 100vw" width="41" srcset="~/assets/images/common/top-halloween.png 200w, ~/assets/images/common/top-halloween.png 400w">
           </nuxt-link>
         </div>
+        <div id="menu05" class="menu">
+          <nuxt-link to="./skill">
+            <img v-if="!isHalloweenStyle" src="~/assets/images/common/skill.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/skill.png 200w, ~/assets/images/common/skill.png 400w">
+            <img v-else src="~/assets/images/common/skill-halloween.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/skill-halloween.png 200w, ~/assets/images/common/skill-halloween.png 400w">
+          </nuxt-link>
+        </div>
         <div id="menu02" class="menu">
           <nuxt-link to="./#news">
             <img v-if="!isHalloweenStyle" src="~/assets/images/common/news.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/news.png 200w, ~/assets/images/common/news.png 400w">
@@ -36,12 +42,6 @@
           <nuxt-link to="./#keyword">
             <img v-if="!isHalloweenStyle" src="~/assets/images/common/keyword.png" sizes="(min-width:180px) 50vw, 100vw" width="92" srcset="~/assets/images/common/keyword.png 200w, ~/assets/images/common/keyword.png 400w">
             <img v-else src="~/assets/images/common/keyword-halloween.png" sizes="(min-width:180px) 50vw, 100vw" width="92" srcset="~/assets/images/common/keyword-halloween.png 200w, ~/assets/images/common/keyword-halloween.png 400w">
-          </nuxt-link>
-        </div>
-        <div id="menu05" class="menu">
-          <nuxt-link to="./skill">
-            <img v-if="!isHalloweenStyle" src="~/assets/images/common/skill.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/skill.png 200w, ~/assets/images/common/skill.png 400w">
-            <img v-else src="~/assets/images/common/skill-halloween.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/skill-halloween.png 200w, ~/assets/images/common/skill-halloween.png 400w">
           </nuxt-link>
         </div>
       </nav>
