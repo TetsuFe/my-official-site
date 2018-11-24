@@ -2,10 +2,10 @@
   <header v-bind:class="isHalloweenStyle ? 'sideB' : 'sideA'">
     <div id="header">
       <div id="logo">
-        <a href="./">
+        <nuxt-link to="./">
           <img v-if="!isHalloweenStyle" src="~/assets/images/common/logo.png" sizes="(min-width:80px) 50vw, 100vw" width="150" srcset="~/assets/images/common/logo.png 200w, ~/assets/images/common/logo.png 400w">
           <img v-else src="~/assets/images/common/logo-halloween.png" sizes="(min-width:80px) 50vw, 100vw" width="150" srcset="~/assets/images/common/logo-halloween.png 200w, ~/assets/images/common/logo-halloween.png 400w">
-        </a>
+        </nuxt-link>
       </div>
       <div id="button-menu" @click="onClickMenuButton">
         <img v-if="!isMenuOpen" src="~/assets/images/icons/menu.svg" sizes="(min-width:100px) 50vw, 100vw" width="42" srcset="~/assets/images/icons/menu.svg 200w, ~/assets/images/icons/menu.svg 400w">
@@ -18,10 +18,10 @@
           <img v-else src="~/assets/images/common/top-halloween.png" sizes="(min-width:80px) 50vw, 100vw" width="41" srcset="~/assets/images/common/top-halloween.png 200w, ~/assets/images/common/top-halloween.png 400w">
         </div>
         <div id="menu02" class="menu" @click="onClickMenuButton">
-          <a href="./skill">
+          <nuxt-link to="./skill">
             <img v-if="!isHalloweenStyle" src="~/assets/images/common/skill.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/skill.png 200w, ~/assets/images/common/skill.png 400w">
             <img v-else src="~/assets/images/common/skill-halloween.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/skill-halloween.png 200w, ~/assets/images/common/skill-halloween.png 400w">
-          </a>
+          </nuxt-link>
         </div>
         <div id="menu03" class="menu" v-scroll-to="'#news'" @click="onClickMenuButton">
           <img v-if="!isHalloweenStyle" src="~/assets/images/common/news.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/news.png 200w, ~/assets/images/common/news.png 400w">
