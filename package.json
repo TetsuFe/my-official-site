@@ -15,7 +15,8 @@
   "dependencies": {
     "nuxt": "^1.0.0",
     "vue-carousel": "^0.14.0",
-    "vue-scrollto": "^2.13.0"
+    "vue-scrollto": "^2.13.0",
+    "vuex-router-sync": "^5.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
