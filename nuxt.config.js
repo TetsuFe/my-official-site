@@ -57,6 +57,7 @@ module.exports = {
     [
       { src: '~/plugins/vue-carousel.js', ssr: false },
       '~/plugins/vue-scrollto.js',
+      '~plugins/vuex-router-sync.js',
     ]
 
 }
