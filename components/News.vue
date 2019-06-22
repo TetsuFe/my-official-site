@@ -31,6 +31,11 @@
       return {
         "newsList": [
           {
+            "text": "久しぶりにサイトの情報を更新しました！",
+            "date": "2019.06.22",
+            "imageUrl": newIcon
+          },
+          {
             "text": "本サイトのKeywordなどを更新しました！",
             "date": "2018.11.23",
             "imageUrl": newIcon
