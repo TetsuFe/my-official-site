@@ -1,0 +1,127 @@
+# vue+cssでハロウィン仕様のスタイルにスイッチ
+
+## 使ったリソース
+http://icooon-mono.com/14931-スライドボタンアイコン1/
+http://icooon-mono.com/14932-スライドボタンの無料アイコン2/
+
+## スイッチを作る
+スイッチを作るイメージは、
+
+
+
+
+## vuexを使って状態管理
+https://ja.nuxtjs.org/guide/vuex-store/
+
+
+## スイッチに合わせてスタイルを変更
+スタイルを変更するイメージは、
+
+- スイッチを押すと状態が変わる
+- 状態に合わせてクラス名を変更
+- クラス名に応じてスタイルが切り替わる
+
+vuexの書き方
+
+vuexは状態管理を行ってくれるライブラリです。状態の変更をするときに基本的にmutationsのメソッドを使う必要があるため、必然的に単方向のデータフローになります。
+
+store/index.js
+```js
+import Vuex from 'vuex'
+
+const store = () => new Vuex.Store({
+
+  state: {
+   isHalloweenStyle : false,
+  },
+  mutations: {
+    toggleSiteStyle (state) {
+      state.isHalloweenStyle = !state.isHalloweenStyle
+    },
+  }
+})
+
+export default store
+```
+
+ポイントは、computedでvuexの状態を監視していることです。vuexは、このようにせずに
+<p v-if="this.$store.state.isHalloweenStyle"のようにしてしまうと、なぜか1回目だけ変更を監視できますが、２回目以降の変更を受け取ることができません。
+
+```
+computed: {
+      isHalloweenStyle () { return this.$store.state.isHalloweenStyle }
+    },
+```
+
+```vue
+<!-- @click="onClickStyleToggle" は<script>内のmethods:と対応 -->
+  <button @click="onClickStyleToggle">
+  <!-- v-if="isHalloweenStyle"は<script>のcomputed: isHalloweenStyleと対応 -->
+    <img v-if="isHalloweenStyle" src="~/assets/images/icons/switch-normal.svg" width="200px" height="100px">
+    <img v-else src="~/assets/images/icons/switch-halloween.svg" width="200px" height="100px">
+  </button>
+  
+  <script>
+  export default {
+    name: "Header",
+    computed: {
+      isHalloweenStyle () { return this.$store.state.isHalloweenStyle }
+    },
+    methods: {
+      onClickStyleToggle: function(){
+        this.$store.commit('toggleSiteStyle');
+      },
+    },
+    data() {
+      return {
+        "isMenuOpen": false,
+      }
+    }
+  }
+</script>
+```
+
+
+## スイッチに合わせてクラス名を変更
+<div v-bind:class="[isActive ? activeClass : '', errorClass]"></div>
+https://jp.vuejs.org/v2/guide/class-and-style.html
+
+実際には以下のように書きます
+
+```vue
+<header v-bind:class="isHalloweenStyle ? 'sideB' : 'sideA'">
+    <!-- 省略 -->
+</header>
+```
+
+sideB, 'sideAクラスにcssを書いておけば、cssが切り替わります。
+
+この時点ではsideAにしかcssを書いていないので、
+
+
+
+## 色の仕様
+参考資料として使ったもの。ハロウィンイラストの色合いが好きなので参考にした（文字と背景の色合いなど）
+https://twitter.com/search?f=images&q=ハロウィン%E3%80%80サガプラ&src=typd
+
+https://www.color-hex.com/color/000000
+https://htmlcolorcodes.com
+
+- 赤はキバ
+- 基本は赤っぽいオレンジ（茶色）
+- アクセントに黄色
+- フッタ・文字は黒
+
+
+toggle-on/off
+
+トグルを試す
+svg画像を使ってcolor指定したらどうなるのか
+
+- ベース色: #fa7f12
+- 黒: black
+- 赤: #e11016
+- 黄色: #ffe800
+- 紫: 
+- 茶2: #D35400
+- 茶3: #A04000
