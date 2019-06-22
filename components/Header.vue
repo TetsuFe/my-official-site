@@ -36,9 +36,9 @@
           <img v-else src="~/assets/images/common/keyword-halloween.png" sizes="(min-width:180px) 50vw, 100vw" width="92" srcset="~/assets/images/common/keyword-halloween.png 200w, ~/assets/images/common/keyword-halloween.png 400w">
         </div>
       </nav>
-      <div @click="onClickStyleToggle" style="margin-top: 5px; position:absolute; right:0">
-        <img v-if="isHalloweenStyle" src="~/assets/images/icons/switch-normal.svg" width="140px" height="70px">
-        <img v-else src="~/assets/images/icons/switch-halloween.svg" width="140px" height="70px">
+      <div @click="onClickStyleToggle" id="styleToggleButton" style="margin-top: 5px; position:absolute; right:0">
+        <img v-if="isHalloweenStyle" src="~/assets/images/icons/switch-normal.svg">
+        <img v-else src="~/assets/images/icons/switch-halloween.svg">
       </div>
       <!--
       <div id="changer-wrap">
@@ -269,5 +269,21 @@ header.sideB {
     border-bottom: 1px solid #e7e7e7;
   }
 
+
+}
+
+
+@media screen and (min-width:900px) {
+  #styleToggleButton img{
+    width: 140px;
+    height: 70px;
+  }
+}
+
+@media screen and (max-width:900px) {
+  #styleToggleButton img{
+    width: 100px;
+    height: 70px;
+  }
 }
 </style>
