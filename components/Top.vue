@@ -4,14 +4,14 @@
     <slide>
       <div class="img-wrap">
         <a href="https://hufurima.com/">
-          <img src="~/assets/images/carousel/hufurima.jpg">
+          <img src="~/assets/images/carousel/hokuma.png">
         </a>
       </div>
     </slide>
     <slide>
       <div class="img-wrap">
         <a href="https://itunes.apple.com/jp/app/id1218804893?mt=8">
-          <img src="~/assets/images/carousel/eitango.jpg">
+          <img src="~/assets/images/carousel/eitango.png">
         </a>
       </div>
     </slide>
