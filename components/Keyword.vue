@@ -11,7 +11,7 @@
             <div class="name">
               <p>エンジニア</p>
             </div>
-            <p class="description"><a href="https://satudora.jp">サツドラ</a>でアプリ開発系のバイトをしています。最近はFlutterやDjangoをメインにwebアプリやモバイルアプリを作ります。<a href="./skill">スキルセット</a></p>
+            <p class="description"><a href="https://satudora.jp">サツドラ</a>でアプリ開発系のバイトをしています。最近はFlutterやDjangoをメインにwebアプリやモバイルアプリを作ります。<nuxt-link to="./skill">スキルセット</nuxt-link></p>
           </div>
           <div class="keyword">
             <div class="name">
