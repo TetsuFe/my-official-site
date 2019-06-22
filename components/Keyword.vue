@@ -11,25 +11,25 @@
             <div class="name">
               <p>エンジニア</p>
             </div>
-            <p class="description">プログラミングで何かを作りたい。でもプログラミングは結構苦痛。好きな言語とかは特にないので、なんでも触ります。<a href="./skill">スキルセット</a></p>
+            <p class="description"><a href="https://satudora.jp">サツドラ</a>でアプリ開発系のバイトをしています。最近はFlutterやDjangoをメインにwebアプリやモバイルアプリを作ります。<nuxt-link to="./skill">スキルセット</nuxt-link></p>
           </div>
           <div class="keyword">
             <div class="name">
               <p>Webサービス開発</p>
             </div>
-            <p class="description">「人生に楽しみを提供する、もしくは楽しい人生を切り拓く手助けをする」サービスが作りたい。具体的には、ノベルゲーム、学習サービス、ユーザ投稿＆いいねがつくサービス、オフラインにつながるサービスが作りたいです。北大生限定フリマWebアプリ「<a href="https://hufurima.com/">ホクマ</a>」を運営しています。</p>
+            <p class="description">「人生に楽しみを提供する、もしくは楽しい人生を切り拓く手助けをする」サービスを作ります。現在は北大生限定フリマWebアプリ「<a href="https://hufurima.com/">ホクマ</a>」を運営（３人チーム）しています。次回作として、キャラクターを使ったアプリ（ノベルゲームや目標管理アプリ）を作成中。</p>
           </div>
           <div class="keyword">
             <div class="name">
-              <p>教育・育成</p>
+              <p>教育</p>
             </div>
-            <p class="description">誰かに何かを教えることが好き。気軽に質問される人になりたい。</p>
+            <p class="description">誰かに何かを教えることが好き。面倒見がいいとたまに言われますがお節介も多いかも。</p>
           </div>
           <div class="keyword">
             <div class="name">
               <p>怠惰？</p>
             </div>
-            <p class="description">怠け癖がある。何かをするのに時間がかかる。本気になれるものを探している。</p>
+            <p class="description">怠け癖がある。何かをするのに時間がかかる。自分のことを整理するのが少し苦手。</p>
           </div>
         </div>
       </div>

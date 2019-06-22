@@ -6,98 +6,74 @@
     </div>
     <div id="news-wrap">
       <div id="news-list">
-        <div class="item">
-          <div class="item-wrap">
-            <a href="#">
-              <div class="thumb">
-                <img src="~/assets/images/icons/new.svg" sizes="(min-width:160px) 50vw, 100vw" width="80">
-              </div>
-              <div class="date">
-                <p>2018.11.23</p>
-              </div>
-              <div class="text">
-                <p>本サイトのKeywordなどを更新しました！</p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="item">
-          <div class="item-wrap">
-            <a href="https://hufurima.com">
-              <div class="thumb">
-                <img src="~/assets/images/icons/new.svg" sizes="(min-width:160px) 50vw, 100vw" width="80">
-              </div>
-              <div class="date">
-                <p>2018.10.1</p>
-              </div>
-              <div class="text">
-                <p>北大生限定Webフリマアプリ「ホクマ」のベータ版が公式リリースされました！</p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="item">
-          <div class="item-wrap">
-            <a href="#">
-              <div class="thumb">
-                <!--<img src="img/news/sideA/thumb/thumb35.jpg" sizes="(min-width:160px) 50vw, 100vw" width="80" srcset="img/news/sideA/thumb/thumb35.jpg 200w, img/news/sideA/thumb/thumb35@2x.jpg 400w">-->
-                <img src="~/assets/images/icons/new.svg" sizes="(min-width:160px) 50vw, 100vw" width="80">
-              </div>
-              <div class="date">
-                <p>2018.09.24</p>
-              </div>
-              <div class="text">
-                <p>トップページのトップ画像とニュースを作成しました</p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="item">
-          <div class="item-wrap">
-            <a href="http://swiftfe0.hatenablog.com/entry/2018/09/23/115644">
-              <div class="thumb">
-                <img src="~/assets/images/icons/blog.svg" sizes="(min-width:160px) 50vw, 100vw" width="80">
-              </div>
-              <div class="date">
-                <p>2018.09.23</p>
-              </div>
-              <div class="text">
-                <p>サイトリニューアルに関するブログを書きました</p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="item">
-          <div class="item-wrap">
-            <a href="#">
-              <div class="thumb">
-                <img src="~/assets/images/icons/new.svg" sizes="(min-width:160px) 50vw, 100vw" width="80">
-              </div>
-              <div class="date">
-                <p>2018.09.23</p>
-              </div>
-              <div class="text">
-                <p>サイトをリニューアルしました！</p>
-              </div>
-            </a>
-          </div>
+          <div v-for="news in newsList" :key="news.id">
+          <NewsListItem :news="news"/>
         </div>
       </div>
       <div class="twitter">
         <div id="twitter-timeline-body">
-          <a class="twitter-timeline" data-height="364" data-theme="light" href="https://twitter.com/tetsufe_twi?ref_src=twsrc%5Etfw">Tweets by tetsufe_twi</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>            </div>
+          <a class="twitter-timeline" data-height="364" data-theme="light" href="https://twitter.com/tetsufe_?ref_src=twsrc%5Etfw">Tweets by tetsufe_twi</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>            </div>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-    export default {
-        name: "News"
+  import NewsListItem from '~/components/NewsListItem.vue';
+  import blogIcon from '~/assets/images/icons/blog.svg';
+  import newIcon from '~/assets/images/icons/new.svg';
+  export default {
+    name: "News",
+    components: {
+      NewsListItem
+    },
+    data() {
+      return {
+        "newsList": [
+          {
+            "text": "久しぶりにサイトの情報を更新しました！",
+            "date": "2019.06.22",
+            "imageUrl": newIcon
+          },
+          {
+            "text": "本サイトのKeywordなどを更新しました！",
+            "date": "2018.11.23",
+            "imageUrl": newIcon
+          },
+          {
+            "text": "北大生限定Webフリマアプリ「ホクマ」のベータ版が公式リリースされました！",
+            "date": "2018.10.1",
+            "imageUrl": newIcon
+          },
+          {
+            "text": "トップページのトップ画像とニュースを作成しました",
+            "date": "2018.09.24",
+            "imageUrl": newIcon
+          },
+          {
+            "text": "サイトリニューアルに関するブログを書きました",
+            "date": "2018.09.23",
+            "imageUrl": blogIcon
+          },
+          {
+            "text": "サイトをリニューアルしました！",
+            "date": "2018.09.23",
+            "imageUrl": newIcon
+          },
+        ]
+      }
     }
+  }
 </script>
 
 <style scoped>
+  #news-list{
+    overflow-y: scroll;
+    width: 710px;
+    height: 364px;
+    margin-right: 50px;
+  }
+
   .title-wrap{
     text-align: center;
     margin-top: 14px;
@@ -148,112 +124,6 @@
     display: flex;
     width: 1120px;
     margin: 0 auto;
-  }
-
-  #news-list {
-    overflow-y: scroll;
-  }
-
-  #news-list a {
-    -webkit-transition: none;
-    transition: none;
-  }
-
-  #news-list p {
-    -webkit-transition: color .25s ease;
-    transition: color .25s ease;
-  }
-
-  #news-list {
-    width: 710px;
-    height: 364px;
-    margin-right: 50px;
-  }
-
-  #wrap.sideA #news-list .item {
-    background: rgba(251,251,252,.5);
-  }
-
-  #wrap.sideB #news-list .item {
-    background: white;
-  }
-
-  #news-list .item:first-child {
-    border-top: 1px solid #d8e2e8;
-  }
-
-  #news-list .item-wrap {
-    position: relative;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    border-bottom: 1px solid #d8e2e8;
-    overflow: hidden;
-  }
-
-  #news-list .item-wrap, #news-list .item-wrap, #news-list .item-wrap a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
-  #news-list .item-wrap #news-list .item-wrap a {
-    width: 100%;
-    padding: 20px 30px 20px 20px;
-  }
-
-  #news-list .thumb {
-    width: 80px;
-    height: 80px;
-  }
-
-  #news-list .thumb img {
-    border-radius: 8px;
-    border: 1px solid #d8e2e8;
-  }
-
-  #news-list .date {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
-
-  #news-list .date p {
-    display: inline-block;
-    width: 104px;
-    height: 22px;
-    color: #fff;
-    font-family: Arvo;
-    font-size: 10px;
-    letter-spacing: 2px;
-    text-align: center;
-    padding: 4px 0 0 5px;
-    border-top-left-radius: 8px;
-  }
-
-  #news-list .date p {
-    background: #adb0b6;
-  }
-
-  #news-list .text {
-    width: calc(100% - 120px);
-    margin-left: 30px;
-  }
-
-  #news-list .text p {
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 20px;
-  }
-
-  #news-list .item-wrap .plane, #news-list .item-wrap a {
-    padding: 24px 16px;
-  }
-
-  #news-list .text p {
-    color: #767b85;
   }
 
   .twitter {
