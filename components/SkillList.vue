@@ -28,7 +28,7 @@
             "sub2": {
               "title": "Firebase",
               "howlong": "3か月(バイト: 進行中)",
-              "rate": "2",
+              "rate": "3",
             },
             "sub3": {
               "title": "Rails",
@@ -41,13 +41,13 @@
             "descs": "バイトでReact/Reduxを使ってます、Vue.js(Nuxt.js)=このサイト。CSSはこのサイトのCSSレベルです。bootstrapも使えます。",
             "sub1": {
               "title": "React",
-              "howlong": "3ヶ月(バイト: 進行中)",
+              "howlong": "半年(バイト)",
               "rate": "3",
             },
             "sub2": {
               "title": "Redux",
-              "howlong": "1ヶ月(バイト: 進行中)",
-              "rate": "2",
+              "howlong": "3ヶ月(バイト)",
+              "rate": "3",
             },
             "sub3": {
               "title": "CSS/Bootstrap4",
@@ -57,21 +57,21 @@
           },
           {
             "title": "モバイル",
-            "descs": "iOSアプリはそこそこ作っています。現在はノベルゲーム＋英単語のアプリをリメイクしようと考えてます",
+            "descs": "モバイルアプリはそこそこ作っています。最近はFlutterにハマってます",
             "sub1": {
-              "title": "iOS",
-              "howlong": "1年半（ぼちぼち進行中）",
-              "rate": "3",
+              "title": "Flutter",
+              "howlong": "半年（バイト）",
+              "rate": "4",
             },
             "sub2": {
+              "title": "iOS",
+              "howlong": "1年半（趣味）",
+              "rate": "3",
+            },
+            "sub3": {
               "title": "android",
               "howlong": "1ヶ月（バイト）",
               "rate": "2",
-            },
-            "sub3": {
-              "title": "flutter",
-              "howlong": "1ヶ月（趣味）",
-              "rate": "1",
             },
           },
           {
@@ -79,17 +79,36 @@
             "descs": "ConohaVPSを借りてWebサービス「ホクマ」を運用しています。Dockerはdocker-composeだけ使ってます。AWSはS3とCloudFrontを少し",
             "sub1": {
               "title": "Webサーバ(CentOS7/VPS)",
-              "howlong": "1年（趣味: 進行中）",
+              "howlong": "1年半（趣味）",
               "rate": "3",
             },
             "sub2": {
               "title": "Docker",
-              "howlong": "1年（趣味: 進行中）",
+              "howlong": "1年半（趣味）",
               "rate": "3",
             },
             "sub3": {
               "title": "AWS(S3/CloudFront)",
-              "howlong": "1年（趣味: 進行中）",
+              "howlong": "1年半（趣味）",
+              "rate": "2",
+            },
+          },
+          {
+            "title": "データベース",
+            "descs": "基本はORMを使います。2019年に入って本をちゃんと読み始めました",
+            "sub1": {
+              "title": "PostgreSQl",
+              "howlong": "1年",
+              "rate": "3",
+            },
+            "sub2": {
+              "title": "MySQL",
+              "howlong": "半年",
+              "rate": "2",
+            },
+            "sub3": {
+              "title": "NoSQL（Cloud Firestoreなど）",
+              "howlong": "半年",
               "rate": "2",
             },
           },
@@ -98,7 +117,7 @@
             "descs": "Git/Githubは基本問題なく使えるレベルです。ファッションVimmerです。",
             "sub1": {
               "title": "Git/Github",
-              "howlong": "2年（進行中）",
+              "howlong": "2年",
               "rate": "4",
             },
             "sub2": {
