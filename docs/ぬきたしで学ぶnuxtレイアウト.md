@@ -155,7 +155,7 @@
 }
 
 #wrap.sideA #story-wrap .story {
-  background: url("/img/story/sideA/story.png") 50% no-repeat;
+  background: url("/img/story/sideA/profile.png") 50% no-repeat;
   background-size: 840px 520px;
   width: 840px;
   height: 520px;
@@ -173,7 +173,7 @@
 }
 
 #wrap.sideB #story-wrap .story {
-  background: url("/img/story/sideB/story.png") 50% no-repeat;
+  background: url("/img/story/sideB/profile.png") 50% no-repeat;
   background-size: 800px 832px;
   width: 800px;
   height: 832px;
