@@ -31,6 +31,12 @@
           <img v-if="!isHalloweenStyle" src="~/assets/images/common/keyword.png" sizes="(min-width:180px) 50vw, 100vw" width="92" srcset="~/assets/images/common/keyword.png 200w, ~/assets/images/common/keyword.png 400w">
           <img v-else src="~/assets/images/common/keyword-halloween.png" sizes="(min-width:180px) 50vw, 100vw" width="92" srcset="~/assets/images/common/keyword-halloween.png 200w, ~/assets/images/common/keyword-halloween.png 400w">
         </div>
+        <div id="menu05" class="menu" v-scroll-to="'#links'" @click="onClickMenuButton">
+          <nuxt-link to="./">
+            <img v-if="!isHalloweenStyle" src="~/assets/images/common/links.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/links.png 200w, ~/assets/images/common/links.png 400w">
+            <img v-else src="~/assets/images/common/links-halloween.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/links-halloween.png 200w, ~/assets/images/common/links-halloween.png 400w">
+          </nuxt-link>
+        </div>
       </nav>
       <div @click="onClickStyleToggle" id="styleToggleButton" style="margin-top: 5px; position:absolute; right:0">
         <img v-if="isHalloweenStyle" src="~/assets/images/icons/switch-normal.svg">

@@ -10,6 +10,7 @@
         <Character/>
         -->
         <Keyword/>
+        <Links/>
       </article>
     </div>
     <Footer/>
@@ -26,9 +27,11 @@
   import Character from "../components/Character";
   import Keyword from "../components/Keyword";
   import Footer from "../components/Footer";
+  import Links from "../components/Links";
 
   export default {
     components: {
+      Links,
       Keyword,
       Header,
       Top,
