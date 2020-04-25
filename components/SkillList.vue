@@ -18,11 +18,30 @@
       return {
         "skills": [
           {
+            "title": "モバイル",
+            "descs": "モバイルアプリはそこそこ作っています。最近はFlutterにハマってます",
+            "sub1": {
+              "title": "Flutter",
+              "howlong": "1年（バイト、個人開発）",
+              "rate": "5",
+            },
+            "sub2": {
+              "title": "iOS",
+              "howlong": "1年半（趣味）",
+              "rate": "3",
+            },
+            "sub3": {
+              "title": "android",
+              "howlong": "1ヶ月（バイト）",
+              "rate": "2",
+            },
+          },
+          {
             "title": "バックエンド",
-            "descs": "個人開発ではDjango、バイトではFirebaseを主に使っています。Djangoは一通り使えます。",
+            "descs": "個人開発ではDjango、バイトではFirebaseを主に使っていました。Djangoは一通り使えます。",
             "sub1": {
               "title": "Django",
-              "howlong": "1年半(個人開発: 進行中)",
+              "howlong": "2年半(個人開発: 進行中)",
               "rate": "4",
             },
             "sub2": {
@@ -38,7 +57,7 @@
           },
           {
             "title": "フロントエンド",
-            "descs": "バイトでReact/Reduxを使ってます、Vue.js(Nuxt.js)=このサイト。CSSはこのサイトのCSSレベルです。bootstrapも使えます。",
+            "descs": "バイトでReact/Reduxを使ってました。Vue.js(Nuxt.js)=このサイト。CSSはこのサイトのCSSレベルです。bootstrapも使えます。",
             "sub1": {
               "title": "React",
               "howlong": "半年(バイト)",
@@ -56,40 +75,21 @@
             },
           },
           {
-            "title": "モバイル",
-            "descs": "モバイルアプリはそこそこ作っています。最近はFlutterにハマってます",
-            "sub1": {
-              "title": "Flutter",
-              "howlong": "半年（バイト）",
-              "rate": "4",
-            },
-            "sub2": {
-              "title": "iOS",
-              "howlong": "1年半（趣味）",
-              "rate": "3",
-            },
-            "sub3": {
-              "title": "android",
-              "howlong": "1ヶ月（バイト）",
-              "rate": "2",
-            },
-          },
-          {
             "title": "インフラ",
             "descs": "ConohaVPSを借りてWebサービス「ホクマ」を運用しています。Dockerはdocker-composeだけ使ってます。AWSはS3とCloudFrontを少し",
             "sub1": {
               "title": "Webサーバ(CentOS7/VPS)",
-              "howlong": "1年半（趣味）",
+              "howlong": "2年半（趣味）",
               "rate": "3",
             },
             "sub2": {
               "title": "Docker",
-              "howlong": "1年半（趣味）",
+              "howlong": "2年半（趣味）",
               "rate": "3",
             },
             "sub3": {
               "title": "AWS(S3/CloudFront)",
-              "howlong": "1年半（趣味）",
+              "howlong": "2年半（趣味）",
               "rate": "2",
             },
           },
@@ -98,7 +98,7 @@
             "descs": "基本はORMを使います。2019年に入って本をちゃんと読み始めました",
             "sub1": {
               "title": "PostgreSQl",
-              "howlong": "1年",
+              "howlong": "2年",
               "rate": "3",
             },
             "sub2": {
@@ -108,7 +108,7 @@
             },
             "sub3": {
               "title": "NoSQL（Cloud Firestoreなど）",
-              "howlong": "半年",
+              "howlong": "1年",
               "rate": "2",
             },
           },
@@ -117,12 +117,12 @@
             "descs": "Git/Githubは基本問題なく使えるレベルです。ファッションVimmerです。",
             "sub1": {
               "title": "Git/Github",
-              "howlong": "2年",
-              "rate": "4",
+              "howlong": "3年",
+              "rate": "5",
             },
             "sub2": {
               "title": "Vim",
-              "howlong": "3年",
+              "howlong": "4年",
               "rate": "3",
             },
             "sub3": {
