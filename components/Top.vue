@@ -14,6 +14,13 @@
     </slide>
     <slide>
       <div class="img-wrap">
+        <a href="https://twitter.com/matchingstudy">
+          <img src="~/assets/images/carousel/studymatching.png">
+        </a>
+      </div>
+    </slide>
+    <slide>
+      <div class="img-wrap">
         <a href="https://itunes.apple.com/jp/app/id1218804893?mt=8">
           <img src="~/assets/images/carousel/eitango.png">
         </a>
@@ -36,7 +43,7 @@
   }
   img{
     max-width: 80%;
-    max-height: 700px;
+    max-height: 500px;
     object-fit: contain;
   }
 
