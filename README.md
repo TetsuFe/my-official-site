@@ -1,6 +1,6 @@
-# tetsufe-github-pages
+# tetsufe-github-pages [![Build Status](https://travis-ci.org/tetsufe/my-official-site.svg?branch=master)](https://travis-ci.org/tetsufe/my-official-site)
 
->  A Nuxt.js Github.io site
+ポートフォリオサイトです
 
 ## Nuxt.jsでgithub pagesを書き換えた
 jsの勉強がてら、Nuxt.jsでgithub pagesを書き換えました。
