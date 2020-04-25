@@ -80,7 +80,7 @@
   }
 
   #keyword-wrap {
-    margin-top: 140px;
+    margin-top: 20px;
   }
 
   #wrap.sideA #keyword-wrap .contents-title h3 {
@@ -213,49 +213,10 @@
       height: 100vw;
     }
 
-    #facility-wrap {
-      margin-top: 80px;
-    }
-
-    #facility-wrap #facility-item {
-      display: block;
-      width: 100%;
-    }
-
-    #facility-wrap .facility {
-      width: 100%;
-      padding: 0 16px;
-    }
-
-    #facility-wrap .facility img {
-      width: 100%;
-    }
-
-    #facility-wrap .facility:not(:last-child) {
-      margin: 0 0 40px;
-    }
-
-    #facility-wrap .text {
-      width: 100%;
-      padding: 20px 6px 0;
-    }
-
-    #facility-wrap .text p {
-      font-size: 13px;
-    }
-
-    #facility-wrap .facility-copy {
-      background: url("/img/concept/sideA/facility_sp.png") top no-repeat;
-      background-size: cover;
-      width: 100vw;
-      height: 18vw;
-      margin-top: 36px;
-    }
-
     #keyword-wrap {
       width: 100%;
       padding: 0 16px;
-      margin-top: 96px;
+      margin-top: 20px;
     }
 
     #keyword-wrap .keyword {

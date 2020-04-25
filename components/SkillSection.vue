@@ -61,7 +61,7 @@
   }
 
   #keyword-wrap {
-    margin-top: 140px;
+    margin-top: 20px;
   }
 
   #wrap.sideA #keyword-wrap .contents-title h3 {
