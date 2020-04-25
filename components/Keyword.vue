@@ -11,25 +11,19 @@
             <div class="name">
               <p>エンジニア</p>
             </div>
-            <p class="description"><a href="https://satudora.jp">サツドラ</a>でアプリ開発系のバイトをしています。最近はFlutterやDjangoをメインにwebアプリやモバイルアプリを作ります。<nuxt-link to="./skill">スキルセット</nuxt-link></p>
+            <p class="description">最近はFlutterやDjangoをメインにwebアプリやモバイルアプリを作っています。<nuxt-link to="./skill">スキルセット</nuxt-link></p>
           </div>
           <div class="keyword">
             <div class="name">
-              <p>Webサービス開発</p>
+              <p>サービス開発</p>
             </div>
-            <p class="description">「人生に楽しみを提供する、もしくは楽しい人生を切り拓く手助けをする」サービスを作ります。現在は北大生限定フリマWebアプリ「<a href="https://hufurima.com/">ホクマ</a>」を運営（３人チーム）しています。次回作として、キャラクターを使ったアプリ（ノベルゲームや目標管理アプリ）を作成中。</p>
+            <p class="description">「人生に新しい楽しさを提供する」サービスを作ります。現在はWebアプリ<a href="https://hufurima.com/">「ホクマ」</a>やモバイルアプリ<a href="https://twitter.com/matchingstudy" >「スタマチ」</a>をチーム開発しています。Webサービスだけでなく、ゲームや漫画も作ってみたい。</p>
           </div>
           <div class="keyword">
             <div class="name">
-              <p>教育</p>
+              <p>協調性○</p>
             </div>
-            <p class="description">誰かに何かを教えることが好き。面倒見がいいとたまに言われますがお節介も多いかも。</p>
-          </div>
-          <div class="keyword">
-            <div class="name">
-              <p>怠惰？</p>
-            </div>
-            <p class="description">怠け癖がある。何かをするのに時間がかかる。自分のことを整理するのが少し苦手。</p>
+            <p class="description">チーム開発が好きで、アジャイル・スクラムなども少しずつ勉強しています。また、面倒見がいいとたまに言われますがお節介も多いかも・・</p>
           </div>
         </div>
       </div>

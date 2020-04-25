@@ -4,9 +4,8 @@
     <div id="after-animation">
       <article>
         <Top/>
+        <Profile/>
         <SkillSection/>
-        <News/>
-        <Story/>
         <!-- TODO: 頑張ってキャラクターのとこ作る
         <Character/>
         -->
@@ -23,7 +22,7 @@
   import Top from '~/components/Top.vue'
   import SkillSection from '~/components/SkillSection.vue'
   import News from '~/components/News.vue'
-  import Story from '~/components/Story.vue'
+  import Profile from '~/components/Profile.vue'
   import Character from "../components/Character";
   import Keyword from "../components/Keyword";
   import Footer from "../components/Footer";
@@ -35,7 +34,7 @@
       Top,
       SkillSection,
       News,
-      Story,
+      Profile,
       Character,
       Footer,
     },
