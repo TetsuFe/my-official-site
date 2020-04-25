@@ -1,37 +1,39 @@
 <template>
-  <section id="story">
+  <section id="profile">
     <div class="title-wrap">
-      <!--<img src="img/story/sideA/title.png" sizes="(min-width:472px) 50vw, 100vw" srcset="img/story/sideA/title.png 200w, img/story/sideA/title@2x.png 400w" width="236">-->
-      <p>ストーリー</p>
-      <h3>Story</h3>
-      <HalloweenAppLogo v-if="isHalloweenStyle"/>
-      <AppLogo v-else/>
+      <!--<img src="img/profile/sideA/title.png" sizes="(min-width:472px) 50vw, 100vw" srcset="img/profile/sideA/title.png 200w, img/profile/sideA/title@2x.png 400w" width="236">-->
+      <p>プロフィール</p>
+      <h3>Profile</h3>
     </div>
-    <div id="story-wrap">
-      <div class="story">
-        大学院修士１年の夏の終わりを迎え、自分の身につけたい技術が「フロントエンド＆モバイル技術とサービス開発手法」だと気づきました。
-        とは言っても、特にjsは初めてまだ一ヶ月になったばかり。まずはこの技術を伸ばしたい。
-        そう思い立って、自分のポートフォリオサイトを、Nuxt.jsで書き直してみました。
-        <br/>
-        追記：修士２年の初夏を迎え、サーバーサイドエンジニアとして恵比寿の11Fにある企業に内定しました（フロントエンドは個人開発である程度伸ばせるため）
+    <div id="profile-wrap">
+      <div class="profile">
+        <p>
+          2020年4月25日版
+        </p>
+        <p>
+          北海道大学情報科学研究科の修士２年生。
+          <a href="https://kitagoe.jp/news/aitokyolab-hokkaido-start/">AI HOKKAIDO LAB</a>と
+          <a href="https://satudora.jp/">サツドラ</a>で
+          エンジニアバイト（React, Flutter, Firebase）として計２年間勤務。
+        </p>
+        <p>
+          個人で<a href="https://itunes.apple.com/jp/app/id1218804893?mt=8">「フレーズ英単語」</a>(iOS/Swift)、
+          チームで<a href="https://hufurima.com/">「ホクマ」</a>（Web/Django)、
+          <a href="https://twitter.com/MatchingStudy">「スタマチ」</a>(iOS/Android/Flutter/Django)を開発・運営しています。
+        </p>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-  import AppLogo from '~/components/AppLogo.vue'
-  import HalloweenAppLogo from '~/components/HalloweenAppLogo.vue'
-
   export default {
     components: {
-      AppLogo,
-      HalloweenAppLogo,
     },
     computed: {
       isHalloweenStyle () { return this.$store.state.isHalloweenStyle }
     },
-    name: "Story"
+    name: "Profile"
   }
 </script>
 
@@ -41,23 +43,23 @@
     text-align: center;
   }
 
-  #story-wrap .story {
+  #profile-wrap .profile {
     width: 80%;
     margin: 0 auto;
   }
 
-  #story-wrap .story {
+  #profile-wrap .profile {
     margin-top: 40px;
     font-size: 20px;
     line-height: 28px;
     font-weight: 800;
   }
 
-  #wrap.sideA #story-wrap .story{
+  #wrap.sideA #profile-wrap .profile{
     color: #767b85;
   }
 
-  #wrap.sideB #story-wrap .story{
+  #wrap.sideB #profile-wrap .profile{
     color: #363b55;
   }
 
