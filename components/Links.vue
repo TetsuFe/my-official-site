@@ -67,7 +67,7 @@
   }
 
   #keyword-wrap {
-    margin-top: 140px;
+    margin-top: 20px;
   }
 
   #wrap.sideA #keyword-wrap .contents-title h3 {
@@ -203,7 +203,7 @@
     #keyword-wrap {
       width: 100%;
       padding: 0 16px;
-      margin-top: 96px;
+      margin-top: 20px;
     }
 
     #keyword-wrap .keyword {
