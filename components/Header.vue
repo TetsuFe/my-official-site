@@ -17,6 +17,12 @@
           <img v-if="!isHalloweenStyle" src="~/assets/images/common/top.png" sizes="(min-width:80px) 50vw, 100vw" width="41" srcset="~/assets/images/common/top.png 200w, ~/assets/images/common/top.png 400w">
           <img v-else src="~/assets/images/common/top-halloween.png" sizes="(min-width:80px) 50vw, 100vw" width="41" srcset="~/assets/images/common/top-halloween.png 200w, ~/assets/images/common/top-halloween.png 400w">
         </div>
+        <div id="menu02" class="menu" @click="onClickMenuButton">
+          <nuxt-link to="./skill">
+            <img v-if="!isHalloweenStyle" src="~/assets/images/common/skill.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/skill.png 200w, ~/assets/images/common/skill.png 400w">
+            <img v-else src="~/assets/images/common/skill-halloween.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/skill-halloween.png 200w, ~/assets/images/common/skill-halloween.png 400w">
+          </nuxt-link>
+        </div>
         <div id="menu04" class="menu" v-scroll-to="'#profile'" @click="onClickMenuButton">
           <img v-if="!isHalloweenStyle" src="~/assets/images/common/story.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/story.png 200w, ~/assets/images/common/story.png 400w">
           <img v-else src="~/assets/images/common/story-halloween.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/story-halloween.png 200w, ~/assets/images/common/story-halloween.png 400w">

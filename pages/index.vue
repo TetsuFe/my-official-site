@@ -5,6 +5,7 @@
       <article>
         <Top/>
         <Profile/>
+        <SkillSection/>
         <!-- TODO: 頑張ってキャラクターのとこ作る
         <Character/>
         -->
@@ -19,6 +20,7 @@
 
   import Header from '~/components/Header.vue'
   import Top from '~/components/Top.vue'
+  import SkillSection from '~/components/SkillSection.vue'
   import News from '~/components/News.vue'
   import Profile from '~/components/Profile.vue'
   import Character from "../components/Character";
@@ -30,6 +32,7 @@
       Keyword,
       Header,
       Top,
+      SkillSection,
       News,
       Profile,
       Character,
