@@ -22,9 +22,7 @@
   import Header from '~/components/Header.vue'
   import Top from '~/components/Top.vue'
   import SkillSection from '~/components/SkillSection.vue'
-  import News from '~/components/News.vue'
   import Profile from '~/components/Profile.vue'
-  import Character from "../components/Character";
   import Keyword from "../components/Keyword";
   import Footer from "../components/Footer";
   import Links from "../components/Links";
@@ -36,9 +34,7 @@
       Header,
       Top,
       SkillSection,
-      News,
       Profile,
-      Character,
       Footer,
     },
     computed: {
