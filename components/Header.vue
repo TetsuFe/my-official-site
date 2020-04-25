@@ -24,8 +24,8 @@
           </nuxt-link>
         </div>
         <div id="menu03" class="menu" v-scroll-to="'#profile'" @click="onClickMenuButton">
-          <img v-if="!isHalloweenStyle" src="~/assets/images/common/story.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/story.png 200w, ~/assets/images/common/story.png 400w">
-          <img v-else src="~/assets/images/common/story-halloween.png" sizes="(min-width:180px) 50vw, 100vw" width="58" srcset="~/assets/images/common/story-halloween.png 200w, ~/assets/images/common/story-halloween.png 400w">
+          <img v-if="!isHalloweenStyle" src="~/assets/images/common/profile.png" sizes="(min-width:180px) 50vw, 100vw" width="92" srcset="~/assets/images/common/profile.png 200w, ~/assets/images/common/profile.png 400w">
+          <img v-else src="~/assets/images/common/profile-halloween.png" sizes="(min-width:180px) 50vw, 100vw" width="92" srcset="~/assets/images/common/profile-halloween.png 200w, ~/assets/images/common/profile-halloween.png 400w">
         </div>
         <div id="menu04" class="menu" v-scroll-to="'#keyword'" @click="onClickMenuButton">
           <img v-if="!isHalloweenStyle" src="~/assets/images/common/keyword.png" sizes="(min-width:180px) 50vw, 100vw" width="92" srcset="~/assets/images/common/keyword.png 200w, ~/assets/images/common/keyword.png 400w">
