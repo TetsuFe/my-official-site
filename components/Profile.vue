@@ -8,22 +8,19 @@
     <div id="profile-wrap">
       <div class="profile">
         <p>
-          2020年4月25日版
-        </p>
-        <p>
           北海道大学情報科学研究科の修士２年生。
-          <a href="https://kitagoe.jp/news/aitokyolab-hokkaido-start/"
-            >AI HOKKAIDO LAB</a
-          >と <a href="https://satudora.jp/">サツドラ</a>で
-          エンジニアバイト（React, Flutter, Firebase）として計２年間勤務。
-        </p>
-        <p>
-          個人で<a href="https://itunes.apple.com/jp/app/id1218804893?mt=8"
+          <a href="https://satudora.jp/">サツドラ</a>で エンジニアバイト（React,
+          Flutter, Firebase）として計２年間勤務。 個人で<a
+            href="https://itunes.apple.com/jp/app/id1218804893?mt=8"
             >「フレーズ英単語」</a
           >(iOS/Swift)、 チームで<a href="https://hufurima.com/">「ホクマ」</a
           >（Web/Django)、
           <a href="https://twitter.com/MatchingStudy">「スタマチ」</a
           >(iOS/Android/Flutter/Django)を開発・運営しています。
+        </p>
+        <br />
+        <p style="text-align: right">
+          2020年7月18日版
         </p>
       </div>
     </div>
