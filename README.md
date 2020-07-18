@@ -1,6 +1,12 @@
 # tetsufe-github-pages [![Build Status](https://travis-ci.org/tetsufe/my-official-site.svg?branch=master)](https://travis-ci.org/tetsufe/my-official-site)
 
-ポートフォリオサイトです
+Nuxt.js 製のポートフォリオサイトです
+
+## 技術
+
+- [Nuxt.js](https://ja.nuxtjs.org/)
+- [Travis CI](https://travis-ci.org/)
+- [Yarn](https://classic.yarnpkg.com/ja/)
 
 ## ドキュメント
 
