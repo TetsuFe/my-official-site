@@ -54,9 +54,15 @@ export default {
 
 #profile-wrap .profile {
   margin-top: 40px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 28px;
   font-weight: 800;
+}
+
+@media screen and (max-width: 900px) {
+  #profile-wrap .profile {
+    font-size: 16px;
+  }
 }
 
 #wrap.sideA #profile-wrap .profile {
