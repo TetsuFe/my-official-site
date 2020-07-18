@@ -49,6 +49,12 @@ export default {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 900px) {
+  #profile-wrap .profile {
+    width: 60%;
+  }
+}
+
 #profile-wrap .profile {
   margin-top: 40px;
   font-size: 18px;
