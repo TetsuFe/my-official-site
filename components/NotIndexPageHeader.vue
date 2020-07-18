@@ -2,7 +2,7 @@
   <header v-bind:class="isHalloweenStyle ? 'sideB' : 'sideA'">
     <div id="header">
       <div id="logo">
-        <nuxt-link to="./">
+        <nuxt-link to="/">
           <img
             v-if="!isHalloweenStyle"
             src="~/assets/images/common/logo.png"
@@ -49,7 +49,7 @@
       </div>
       <nav id="menu">
         <div id="menu01" class="menu">
-          <nuxt-link to="./#top">
+          <nuxt-link to="/">
             <img
               v-if="!isHalloweenStyle"
               src="~/assets/images/common/top.png"
