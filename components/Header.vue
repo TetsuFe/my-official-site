@@ -1,5 +1,5 @@
 <template>
-  <header v-bind:class="isHalloweenStyle ? 'sideB' : 'sideA'">
+  <header v-bind:class="[isHalloweenStyle ? 'sideB' : 'sideA' , isMenuOpen ? 'is-open' : '']">
     <div id="header">
       <div id="logo">
         <nuxt-link to="./">
@@ -157,11 +157,6 @@ export default {
   methods: {
     onClickMenuButton() {
       if (process.browser) {
-        if (this.isMenuOpen) {
-          document.querySelector("header").classList.remove("is-open");
-        } else {
-          document.querySelector("header").classList.add("is-open");
-        }
         this.isMenuOpen = !this.isMenuOpen;
       }
     },
