@@ -21,7 +21,7 @@
       </slide>
       <slide>
         <div class="img-wrap">
-          <a href="https://itunes.apple.com/jp/app/id1218804893?mt=8">
+          <a href="https://github.com/tetsufe/tangomaster2">
             <img src="~/assets/images/carousel/eitango.png" />
           </a>
         </div>
