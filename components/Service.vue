@@ -7,16 +7,16 @@
     <carousel per-page="1" mouse-drag="false">
       <slide>
         <div class="img-wrap">
-          <a href="https://hufurima.com/">
+          <nuxt-link to="/MyServicesDesc/Hokuma">
             <img src="~/assets/images/carousel/hokuma.png" />
-          </a>
+          </nuxt-link>
         </div>
       </slide>
       <slide>
         <div class="img-wrap">
-          <a href="https://twitter.com/matchingstudy">
+          <nuxt-link to="/MyServicesDesc/StudyMatching">
             <img src="~/assets/images/carousel/studymatching.png" />
-          </a>
+          </nuxt-link>
         </div>
       </slide>
       <slide>
