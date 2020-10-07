@@ -1,5 +1,5 @@
 <template>
-  <section id="top">
+  <section id="service">
     <div class="contents-title">
       <p>サービス</p>
       <h3>Services</h3>
@@ -32,7 +32,7 @@
 
 <script>
 export default {
-  name: "Top",
+  name: "Service",
 };
 </script>
 
@@ -44,10 +44,6 @@ img {
   max-width: 80%;
   max-height: 500px;
   object-fit: contain;
-}
-
-.contents-title {
-  margin-bottom: -100px;
 }
 
 .contents-title h3 {
@@ -89,7 +85,7 @@ img {
   color: #ffe800 !important;
 }
 
-#top {
+#service {
   margin-top: 70px;
 }
 </style>

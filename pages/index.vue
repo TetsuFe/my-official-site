@@ -1,55 +1,56 @@
 <template>
   <div id="wrap" v-bind:class="isHalloweenStyle ? 'sideB' : 'sideA'">
-    <Header/>
+    <Header />
     <div id="after-animation">
       <article>
-        <Top/>
-        <Profile/>
-        <SkillSection/>
+        <Service />
+        <Profile />
+        <SkillSection />
         <!-- TODO: 頑張ってキャラクターのとこ作る
         <Character/>
         -->
-        <Keyword/>
-        <Links/>
+        <Keyword />
+        <Links />
       </article>
     </div>
-    <Footer/>
+    <Footer />
   </div>
 </template>
 
 <script>
+import Header from "~/components/Header.vue";
+import Service from "~/components/service.vue";
+import SkillSection from "~/components/SkillSection.vue";
+import Profile from "~/components/Profile.vue";
+import Keyword from "../components/Keyword";
+import Footer from "../components/Footer";
+import Links from "../components/Links";
 
-  import Header from '~/components/Header.vue'
-  import Top from '~/components/Top.vue'
-  import SkillSection from '~/components/SkillSection.vue'
-  import Profile from '~/components/Profile.vue'
-  import Keyword from "../components/Keyword";
-  import Footer from "../components/Footer";
-  import Links from "../components/Links";
-
-  export default {
-    components: {
-      Links,
-      Keyword,
-      Header,
-      Top,
-      SkillSection,
-      Profile,
-      Footer,
+export default {
+  components: {
+    Links,
+    Keyword,
+    Header,
+    Service,
+    SkillSection,
+    Profile,
+    Footer,
+  },
+  computed: {
+    isHalloweenStyle() {
+      return this.$store.state.isHalloweenStyle;
     },
-    computed: {
-      isHalloweenStyle () { return this.$store.state.isHalloweenStyle },
-    },
-  }
+  },
+};
 </script>
 
 <style>
-  #wrap {
-    width: 100%;
-    height: 100%;
-  }
+#wrap {
+  width: 100%;
+  height: 100%;
+}
 
-  #wrap.sideB {
-    background-color: #fa7f12;
-  }
+#wrap.sideB {
+  background-color: #fa7f12;
+}
 </style>
