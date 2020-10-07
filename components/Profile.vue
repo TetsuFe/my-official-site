@@ -13,15 +13,14 @@
           Flutter, Firebase）として計２年間勤務。 個人で<a
             href="https://itunes.apple.com/jp/app/id1218804893?mt=8"
             >「フレーズ英単語」</a
-          >(iOS/Swift)、 チームで<a href="https://hufurima.com/">「ホクマ」</a
+          >(iOS/Swift)、 チームで<nuxt-link to="MyServicesDesc/Hokuma"
+            >「ホクマ」</nuxt-link
           >（Web/Django)、
-          <a href="https://twitter.com/MatchingStudy">「スタマチ」</a
+          <nuxt-link to="MyServicesDesc/StudyMatching">「スタマチ」</nuxt-link
           >(iOS/Android/Flutter/Django)を開発・運営しています。
         </p>
         <br />
-        <p style="text-align: right">
-          2020年7月18日版
-        </p>
+        <p style="text-align: right">2020年7月18日版</p>
       </div>
     </div>
   </section>
@@ -33,9 +32,9 @@ export default {
   computed: {
     isHalloweenStyle() {
       return this.$store.state.isHalloweenStyle;
-    }
+    },
   },
-  name: "Profile"
+  name: "Profile",
 };
 </script>
 
