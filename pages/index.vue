@@ -19,7 +19,7 @@
 
 <script>
 import Header from "~/components/Header.vue";
-import Service from "~/components/service.vue";
+import Service from "~/components/Service.vue";
 import SkillSection from "~/components/SkillSection.vue";
 import Profile from "~/components/Profile.vue";
 import Keyword from "../components/Keyword";
