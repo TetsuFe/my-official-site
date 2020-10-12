@@ -19,7 +19,7 @@
         "skills": [
           {
             "title": "モバイル",
-            "descs": "モバイルアプリはそこそこ作っています。最近はFlutterにハマってます",
+            "descs": "モバイルアプリは何個か作っており、レビュー30個ほどのアプリがあります。最近はFlutterにハマってます",
             "sub1": {
               "title": "Flutter",
               "howlong": "1年（バイト、個人開発）",
@@ -41,32 +41,32 @@
             "descs": "個人開発ではDjango、バイトではFirebaseを主に使っていました。Djangoは一通り使えます。",
             "sub1": {
               "title": "Django",
-              "howlong": "2年半(個人開発: 進行中)",
-              "rate": "4",
+              "howlong": "2年半(個人開発)",
+              "rate": "5",
             },
             "sub2": {
-              "title": "Firebase",
-              "howlong": "3か月(バイト: 進行中)",
-              "rate": "3",
+              "title": "Firebase(Firestore, Functions)",
+              "howlong": "3か月(バイト)",
+              "rate": "4",
             },
             "sub3": {
               "title": "Rails",
-              "howlong": "1年(個人開発)",
+              "howlong": "1年",
               "rate": "3",
             },
           },
           {
             "title": "フロントエンド",
-            "descs": "バイトでReact/Reduxを使ってました。Vue.js(Nuxt.js)=このサイト。CSSはこのサイトのCSSレベルです。bootstrapも使えます。",
+            "descs": "バイトでReact/Reduxを使ってました。Unityも少しはできます。CSSはこのサイトのCSSレベルです。bootstrapも使えます。",
             "sub1": {
               "title": "React",
               "howlong": "半年(バイト)",
               "rate": "3",
             },
             "sub2": {
-              "title": "Redux",
-              "howlong": "3ヶ月(バイト)",
-              "rate": "3",
+              "title": "Unity",
+              "howlong": "3ヶ月",
+              "rate": "2",
             },
             "sub3": {
               "title": "CSS/Bootstrap4",
@@ -85,7 +85,7 @@
             "sub2": {
               "title": "Docker",
               "howlong": "2年半（趣味）",
-              "rate": "3",
+              "rate": "4",
             },
             "sub3": {
               "title": "AWS(S3/CloudFront)",
@@ -95,7 +95,7 @@
           },
           {
             "title": "データベース",
-            "descs": "基本はORMを使います。2019年に入って本をちゃんと読み始めました",
+            "descs": "基本はORMを使います。2019年に入って本をちゃんと読み始めました。インデックスやn+1も少しはわかります",
             "sub1": {
               "title": "PostgreSQl",
               "howlong": "2年",
@@ -104,7 +104,7 @@
             "sub2": {
               "title": "MySQL",
               "howlong": "半年",
-              "rate": "2",
+              "rate": "3",
             },
             "sub3": {
               "title": "NoSQL（Cloud Firestoreなど）",
@@ -123,7 +123,7 @@
             "sub2": {
               "title": "Vim",
               "howlong": "4年",
-              "rate": "3",
+              "rate": "4",
             },
             "sub3": {
               "title": "アニメ/ノベルゲーム",
