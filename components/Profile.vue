@@ -8,11 +8,11 @@
     <div id="profile-wrap">
       <div class="profile">
         <p>
-          北海道大学情報科学研究科の修士２年生。
+          北海道大学情報科学研究科の修士２年生です。「生きる活力を高める」サービスを提供していきたいです（エンタメ、自己研鑽系）。
           <a href="https://satudora.jp/">サツドラ</a>で エンジニアバイト（React,
           Flutter, Firebase）として計２年間勤務。 個人で<a
-            href="https://itunes.apple.com/jp/app/id1218804893?mt=8"
-            >「フレーズ英単語」</a
+            href="https://apps.apple.com/jp/app/id1524444519?mt=8"
+            >「禁欲サポーター」</a
           >(iOS/Swift)、 チームで<nuxt-link to="MyServicesDesc/Hokuma"
             >「ホクマ」</nuxt-link
           >（Web/Django)、
@@ -20,7 +20,7 @@
           >(iOS/Android/Flutter/Django)を開発・運営しています。
         </p>
         <br />
-        <p style="text-align: right">2020年7月18日版</p>
+        <p style="text-align: right">2020年10月12日版</p>
       </div>
     </div>
   </section>
