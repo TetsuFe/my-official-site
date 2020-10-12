@@ -22,7 +22,7 @@
             "descs": "モバイルアプリは何個か作っており、レビュー30個ほどのアプリがあります。最近はFlutterにハマってます",
             "sub1": {
               "title": "Flutter",
-              "howlong": "1年（バイト、個人開発）",
+              "howlong": "2年（バイト、個人開発）",
               "rate": "5",
             },
             "sub2": {
@@ -41,7 +41,7 @@
             "descs": "個人開発ではDjango、バイトではFirebaseを主に使っていました。Djangoは一通り使えます。",
             "sub1": {
               "title": "Django",
-              "howlong": "2年半(個人開発)",
+              "howlong": "3年(個人開発)",
               "rate": "5",
             },
             "sub2": {
