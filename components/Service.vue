@@ -7,6 +7,13 @@
     <carousel per-page="1" mouse-drag="false">
       <slide>
         <div class="img-wrap">
+          <a href="https://apps.apple.com/jp/app/id1524444519?mt=8">
+            <img src="~/assets/images/carousel/kinyoku_supporter.png" />
+          </a>
+        </div>
+      </slide>
+      <slide>
+        <div class="img-wrap">
           <nuxt-link to="/MyServicesDesc/Hokuma">
             <img src="~/assets/images/carousel/hokuma.png" />
           </nuxt-link>
