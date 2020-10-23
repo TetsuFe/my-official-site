@@ -13,7 +13,7 @@
           Flutter, Firebase）として計２年間勤務。 個人で<a
             href="https://apps.apple.com/jp/app/id1524444519?mt=8"
             >「禁欲サポーター」</a
-          >(iOS/Swift)、 チームで<nuxt-link to="MyServicesDesc/Hokuma"
+          >(Flutter/iOS・Android)、 チームで<nuxt-link to="MyServicesDesc/Hokuma"
             >「ホクマ」</nuxt-link
           >（Web/Django)、
           <nuxt-link to="MyServicesDesc/StudyMatching">「スタマチ」</nuxt-link

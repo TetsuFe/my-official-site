@@ -17,7 +17,9 @@
             <div class="name">
               <p>サービス開発</p>
             </div>
-            <p class="description">「人生に新しい楽しさを提供する」サービスを作ります。現在はWebアプリ<a href="https://hufurima.com/">「ホクマ」</a>やモバイルアプリ<a href="https://twitter.com/matchingstudy" >「スタマチ」</a>をチーム開発しています。Webサービスだけでなく、ゲームや漫画も作ってみたい。</p>
+            <p class="description">「生きる活力を高める」サービスを作ります（エンタメ、自己研鑽系）。現在は<a
+            href="https://apps.apple.com/jp/app/id1524444519?mt=8"
+            >「禁欲サポーター」</a>を開発しています。Webサービスだけでなく、ゲームや漫画も作ってみたい。</p>
           </div>
           <div class="keyword">
             <div class="name">
