@@ -13,11 +13,15 @@
           Flutter, Firebase）として計２年間勤務。 個人で<a
             href="https://apps.apple.com/jp/app/id1524444519?mt=8"
             >「禁欲サポーター」</a
-          >(iOS/Swift)、 チームで<nuxt-link to="MyServicesDesc/Hokuma"
+          >(Flutter/iOS・Android)、 チームで<nuxt-link to="MyServicesDesc/Hokuma"
             >「ホクマ」</nuxt-link
           >（Web/Django)、
           <nuxt-link to="MyServicesDesc/StudyMatching">「スタマチ」</nuxt-link
           >(iOS/Android/Flutter/Django)を開発・運営しています。
+        </p>
+        <p>
+          技術的には、Flutter(Dart)、Django(Python)が得意です。フロントエンドからバックエンド・インフラ面幅広く実装・構築経験があります。
+          最近特に関心があるのは、「良いコード」になるように設計やテストを工夫することです。
         </p>
         <br />
         <p style="text-align: right">2020年10月12日版</p>
@@ -129,6 +133,6 @@ export default {
 }
 
 .title-wrap {
-  margin-top: 14px;
+  margin-top: 80px;
 }
 </style>
