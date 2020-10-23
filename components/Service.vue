@@ -93,6 +93,6 @@ img {
 }
 
 #service {
-  margin-top: 70px;
+  margin-top: 40px;
 }
 </style>

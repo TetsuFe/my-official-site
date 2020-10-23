@@ -3,8 +3,8 @@
     <Header />
     <div id="after-animation">
       <article>
-        <Service />
         <Profile />
+        <Service />
         <SkillSection />
         <!-- TODO: 頑張ってキャラクターのとこ作る
         <Character/>
