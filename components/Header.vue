@@ -356,6 +356,14 @@ header.sideB {
     transition: height 0.25s ease-in;
   }
 
+  header .nenu{
+    display: none;
+  }
+
+  header.is-open .menu {
+    display: inline;
+  }
+
   header.is-open {
     height: 100%;
     -webkit-transition: height 0.25s ease-in;
