@@ -4,7 +4,7 @@
     <p>スタマチは運営を別チームに移したのち、閉鎖しました。</p>
 
     <p>
-      こちらは、スタマチがどんなWebアプリであったかのご紹介のためのページです。
+      こちらは、スタマチがどんなアプリであったかのご紹介のためのページです。
     </p>
 
     <h2>スタマチの使用技術</h2>
@@ -19,5 +19,7 @@
       <li>HTTPS: Let's Encrypt</li>
       <li>その他: Bootstrap</li>
     </ul>
+
+    <a target=_brank href="https://qiita.com/tetsufe/items/a189034dc17e0059d391">スタマチについて書いたQiita記事</a>
   </div>
 </template>
